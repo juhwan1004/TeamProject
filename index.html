@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
 	<meta charset="UTF-8">
 	<title>Team Project</title>
@@ -7,90 +7,278 @@
 <body>
 <!-- HEADER -->
 	<header class="header">
-		<h1>Record</h1>
 		<!-- Logo -->
+		<h1 class="header-logo">Record</h1>
 		<!-- Search Bar -->
+		<form class="header-search">
+			<!-- Search input -->
+			<input id="header-search-input" placeholder="Search" aria-label="앨범 검색">
+			<!-- Search Button -->
+			<button type="submit" class="header-search-button">아이콘 폰트</button>
+		</form>
 		<!-- Display ID -->
-		<!-- Log In -->
+		<p class="header-display-id"></p>
+		<!-- Sign In -->
+		<button class="sign-in"></button>
 		<!-- Sign Up -->
+		<button class="sign-up"></button>
 	</header>
-<!-- VIDEO | CAROUSEL -->
-	<section class="carousel">
-		<h2>Carousel Heading</h2>
-		<!-- Carousel -->
-	</section>
-<!-- MVP -->
-	<section class="mvp">
-		<h2>MVP Heading</h2>
-		<!-- Stuffs -->
-	</section>
-<!-- USERS -->
-	<section class="users">
-		<h2>Users Heading</h2>
-		<article class="user-album">
-			<h3>Album Heading</h3>
-			<figure>
-				<figcaption>album 1 title</figcaption>
-				<img src="/" alt="img">
-				<p>Album Description</p>
-			</figure>
-		</article>
-
-		<article class="user-album">
-			<h3>Album Heading</h3>
-			<figure>
-				<figcaption>album 2 title</figcaption>
-				<img src="/" alt="img">
-				<p>Album Description</p>
-			</figure>
-		</article>
-
-		<article class="user-album">
-			<h3>Album Heading</h3>
-			<figure>
-				<figcaption>album 3 title</figcaption>
-				<img src="/" alt="img">
-				<p>Album Description</p>
-			</figure>
-		</article>
-
-		<article class="user-album">
-			<h3>Album Heading</h3>
-			<figure>
-				<figcaption>album 4 title</figcaption>
-				<img src="/" alt="img">
-				<p>Album Description</p>
-			</figure>
-		</article>
-
-		<article class="user-album">
-			<h3>Album Heading</h3>
-			<figure>
-				<figcaption>album 5 title</figcaption>
-				<img src="/" alt="img">
-				<p>Album Description</p>
-			</figure>
-		</article>
-
-		<article class="user-album">
-			<h3>Album Heading</h3>
-			<figure>
-				<figcaption>album 6 title</figcaption>
-				<img src="/" alt="img">
-				<p>Album Description</p>
-			</figure>
+<!-- VIDEO -->
+	<section class="video">
+		<!-- Video Heading	-->
+		<h2 class="video-heading readable-hidden">Video Heading</h2>
+		<!-- Background Video -->
+		<video class="video-play"></video>
+		<!-- Video Description -->
+		<div class="video-contents">
+			<h3 class="video-title"></h3>
+			<p class="video-desc"></p>
+		</div>
+		<!-- Download App -->
+		<article class="app-download">
+			<h3 class="app-download-heading readable-hidden">App Download Heading</h3>
+			<!-- App Store -->
+			<button class="app-store"></button>
+			<!-- Google Play -->	
+			<button class="google-play"></button>		
 		</article>
 	</section>
+<!-- INTRO -->
+	<section class="intro">
+		<!-- Intro Heading -->
+		<h2 class="intro-heading">Record my travel</h2>
+		<!-- Intro Description -->
+		<p class="intro-desc">설명내용</p>
+	</section>
+<!-- ALBUMS -->
+	<main class="albums">
+		<h2 class="albums-heading readable-hidden">Albums Heading</h2>
+		<!-- Album Wrapper --> 
+		<div class="album-wrapper">
+			<!-- Add Album -->
+			<div class="add-album">
+				<!-- Move to My Page -->
+				<a href="/" class="add-album-link"> + </a>
+			</div>
+			<!-- Album -->
+			<article class="album">
+				<h3 class="album-heading readable-hidden">Album Heading</h3>
+				<figure class="album-contents">
+					<!-- Local Name -->
+					<figcaption class="album-local-name">Local Name</figcaption>
+					<!-- Album Image -->
+					<img src="/" class="album-image" alt="image">
+					<!-- Album Title -->
+					<p class="ablum-title">Album Title</p>
+					<!-- Move to Detail Page -->
+					<button class="button-more">move</button>
+				</figure>
+				<!-- if album hover -->
+				<button class="button-like">찜하기</button>
+				<button class="button-share">공유하기</button>
+			</article>
+			<article class="album">
+				<h3 class="album-heading readable-hidden">Album Heading</h3>
+				<figure class="album-contents">
+					<!-- Local Name -->
+					<figcaption class="album-local-name">Local Name</figcaption>
+					<!-- Album Image -->
+					<img src="/" class="album-image" alt="image">
+					<!-- Album Title -->
+					<p class="ablum-title">Album Title</p>
+					<!-- Move to Detail Page -->
+					<button class="button-more">move</button>
+				</figure>
+				<!-- if album hover -->
+				<button class="button-like">찜하기</button>
+				<button class="button-share">공유하기</button>
+			</article>
+			<article class="album">
+				<h3 class="album-heading readable-hidden">Album Heading</h3>
+				<figure class="album-contents">
+					<!-- Local Name -->
+					<figcaption class="album-local-name">Local Name</figcaption>
+					<!-- Album Image -->
+					<img src="/" class="album-image" alt="image">
+					<!-- Album Title -->
+					<p class="ablum-title">Album Title</p>
+					<!-- Move to Detail Page -->
+					<button class="button-more">move</button>
+				</figure>
+				<!-- if album hover -->
+				<button class="button-like">찜하기</button>
+				<button class="button-share">공유하기</button>
+			</article>
+			<article class="album">
+				<h3 class="album-heading readable-hidden">Album Heading</h3>
+				<figure class="album-contents">
+					<!-- Local Name -->
+					<figcaption class="album-local-name">Local Name</figcaption>
+					<!-- Album Image -->
+					<img src="/" class="album-image" alt="image">
+					<!-- Album Title -->
+					<p class="ablum-title">Album Title</p>
+					<!-- Move to Detail Page -->
+					<button class="button-more">move</button>
+				</figure>
+				<!-- if album hover -->
+				<button class="button-like">찜하기</button>
+				<button class="button-share">공유하기</button>
+			</article>
+			<article class="album">
+				<h3 class="album-heading readable-hidden">Album Heading</h3>
+				<figure class="album-contents">
+					<!-- Local Name -->
+					<figcaption class="album-local-name">Local Name</figcaption>
+					<!-- Album Image -->
+					<img src="/" class="album-image" alt="image">
+					<!-- Album Title -->
+					<p class="ablum-title">Album Title</p>
+					<!-- Move to Detail Page -->
+					<button class="button-more">move</button>
+				</figure>
+				<!-- if album hover -->
+				<button class="button-like">찜하기</button>
+				<button class="button-share">공유하기</button>
+			</article>
+			<article class="album">
+				<h3 class="album-heading readable-hidden">Album Heading</h3>
+				<figure class="album-contents">
+					<!-- Local Name -->
+					<figcaption class="album-local-name">Local Name</figcaption>
+					<!-- Album Image -->
+					<img src="/" class="album-image" alt="image">
+					<!-- Album Title -->
+					<p class="ablum-title">Album Title</p>
+					<!-- Move to Detail Page -->
+					<button class="button-more">move</button>
+				</figure>
+				<!-- if album hover -->
+				<button class="button-like">찜하기</button>
+				<button class="button-share">공유하기</button>
+			</article>
+			<article class="album">
+				<h3 class="album-heading readable-hidden">Album Heading</h3>
+				<figure class="album-contents">
+					<!-- Local Name -->
+					<figcaption class="album-local-name">Local Name</figcaption>
+					<!-- Album Image -->
+					<img src="/" class="album-image" alt="image">
+					<!-- Album Title -->
+					<p class="ablum-title">Album Title</p>
+					<!-- Move to Detail Page -->
+					<button class="button-more">move</button>
+				</figure>
+				<!-- if album hover -->
+				<button class="button-like">찜하기</button>
+				<button class="button-share">공유하기</button>
+			</article>
+			<article class="album">
+				<h3 class="album-heading readable-hidden">Album Heading</h3>
+				<figure class="album-contents">
+					<!-- Local Name -->
+					<figcaption class="album-local-name">Local Name</figcaption>
+					<!-- Album Image -->
+					<img src="/" class="album-image" alt="image">
+					<!-- Album Title -->
+					<p class="ablum-title">Album Title</p>
+					<!-- Move to Detail Page -->
+					<button class="button-more">move</button>
+				</figure>
+				<!-- if album hover -->
+				<button class="button-like">찜하기</button>
+				<button class="button-share">공유하기</button>
+			</article>
+			<article class="album">
+				<h3 class="album-heading readable-hidden">Album Heading</h3>
+				<figure class="album-contents">
+					<!-- Local Name -->
+					<figcaption class="album-local-name">Local Name</figcaption>
+					<!-- Album Image -->
+					<img src="/" class="album-image" alt="image">
+					<!-- Album Title -->
+					<p class="ablum-title">Album Title</p>
+					<!-- Move to Detail Page -->
+					<button class="button-more">move</button>
+				</figure>
+				<!-- if album hover -->
+				<button class="button-like">찜하기</button>
+				<button class="button-share">공유하기</button>
+			</article>
+			<article class="album">
+				<h3 class="album-heading readable-hidden">Album Heading</h3>
+				<figure class="album-contents">
+					<!-- Local Name -->
+					<figcaption class="album-local-name">Local Name</figcaption>
+					<!-- Album Image -->
+					<img src="/" class="album-image" alt="image">
+					<!-- Album Title -->
+					<p class="ablum-title">Album Title</p>
+					<!-- Move to Detail Page -->
+					<button class="button-more">move</button>
+				</figure>
+				<!-- if album hover -->
+				<button class="button-like">찜하기</button>
+				<button class="button-share">공유하기</button>
+			</article>
+			<article class="album">
+				<h3 class="album-heading readable-hidden">Album Heading</h3>
+				<figure class="album-contents">
+					<!-- Local Name -->
+					<figcaption class="album-local-name">Local Name</figcaption>
+					<!-- Album Image -->
+					<img src="/" class="album-image" alt="image">
+					<!-- Album Title -->
+					<p class="ablum-title">Album Title</p>
+					<!-- Move to Detail Page -->
+					<button class="button-more">move</button>
+				</figure>
+				<!-- if album hover -->
+				<button class="button-like">찜하기</button>
+				<button class="button-share">공유하기</button>
+			</article>
+			<!-- Album Count -->
+			<article class="album-count">
+				<!-- Album Count Heading -->
+				<h3 class="ablum-count-heading">현재 <strong>나만의 여행</strong> 등록 수</h3>
+				<!-- Album Count Display -->
+				<div class="ablum-count-display"></div>
+				<!-- Album Count Description -->
+				<p class="album-count-desc">지금 자신의 여행을 사진과 함께 기록하세요!</p>
+			</article>
+		</div>
+	</main>
 <!-- RECORD -->
-	<section>
-		<h2>Heading</h2>
+	<section class="info">
+		<h2 class="info-heading readable-hidden">Info Heading</h2>
 		<!-- Background Image -->
-		<!-- App Store / Google Play -->
+		<figure class="info-contents">
+			<figcaption class="readable-hidden">Info Contents</figcaption>
+			<!-- Info Image -->
+			<img src="/" class="info-logo">
+			<!-- Info Description -->
+			<p class="info-desc">사진과 지도를 함께 기록하는 여행다이어리</p>
+		</figure>
+		<!-- Download App -->
+		<article class="app-download">
+			<h3 class="app-download-heading readable-hidden">App Download Heading</h3>
+			<!-- App Store -->
+			<button class="app-store"></button>
+			<!-- Google Play -->	
+			<button class="google-play"></button>		
+		</article>
 	</section>
 <!-- FOOTER -->
 	<footer class="footer">
+		<!-- Footer Heading -->
+		<h2 class="footer-heading">Record</h2>
+		<!-- Address -->
+		<address class="footer-address">서울 특별시 서초구 강남대로...</address>
+		<!-- Tel/email -->
 		<!-- Copyright -->
 		<!-- SNS Links -->
+			<!-- 페이스북 -->
+			<!-- 인스타그램 -->
 	</footer>
 </body>
 </html>
