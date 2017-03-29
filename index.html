@@ -3,45 +3,63 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Team Project</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!-- HEADER -->
 	<header class="header">
 		<!-- Logo -->
-		<h1 class="header-logo">Record</h1>
-		<p>github</p>
+		<h1 class="header-logo">
+			<a href="#"><img src="imges/logo-1.png" alt="Record"></a>
+		</h1>
+		<!-- Display ID -->
+		<p class="header-display-id">사진과 위치를 함께 기록하는 여행다이어리</p>
 		<!-- Search Bar -->
 		<form class="header-search">
 			<!-- Search input -->
 			<input id="header-search-input" placeholder="Search" aria-label="앨범 검색">
-			<!-- Search Button -->
-			<button type="submit" class="header-search-button">아이콘 폰트</button>
+			<button type="submit" class="header-search-button">검색</button>
 		</form>
-		<!-- Display ID -->
-		<p class="header-display-id"></p>
 		<!-- Sign In -->
-		<button class="sign-in"></button>
+		<button class="sign-in">Log in</button>
 		<!-- Sign Up -->
-		<button class="sign-up"></button>
+		<button class="sign-up">Create an account</button>
 	</header>
 <!-- VIDEO -->
 	<section class="video">
 		<!-- Video Heading	-->
 		<h2 class="video-heading readable-hidden">Video Heading</h2>
 		<!-- Background Video -->
-		<video class="video-play"></video>
+		<div class="youtubeWrap">
+			<iframe width="1500" height="840"	src="https://www.youtube.com/embed/QrfwnfI1V0o?rel=0&amp;controls=0&amp;showinfo=0?&amp;autoplay=1&amp;loop=1&amp;playlist=QrfwnfI1V0o&amp;modestbranding=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+		 <!-- poster="imges/main-image.png" -->
 		<!-- Video Description -->
 		<div class="video-contents">
-			<h3 class="video-title"></h3>
-			<p class="video-desc"></p>
+			<h3 class="video-title">EXPLORE.<br>DREAM.<br>DISCOVER.</h3>
+			<p class="video-desc">We help you track and share your journeys in an easy
+			and beautifyl way, turning your travel moments into
+			lifetime memories. </p>
 		</div>
 		<!-- Download App -->
-		<article class="app-download">
-			<h3 class="app-download-heading readable-hidden">App Download Heading</h3>
+		<article class="header-app-download">
+			<h3 class="header-app-download-heading readable-hidden">App Download Heading</h3>
 			<!-- App Store -->
-			<button class="app-store"></button>
+			<button
+			class="header-app-store" role="link"
+			onclick="window.open('https://itunes.apple.com/kr/genre/ios/id36')"
+			title="App Store 바로가기">
+				<img src="imges/logo-apple.png" alt="logo-apple">
+				Download on the <br><strong>App Store</strong>
+			</button>
 			<!-- Google Play -->
-			<button class="google-play"></button>
+			<button
+			class="header-google-play" role="link"
+			onclick="window.open('https://play.google.com/store')"
+			title="Google Store 바로가기">
+				<img src="imges/logo-googleplay.png" alt="logo-googlePlay">
+				GET IT ON<br><strong>Google Play</strong>
+			</button>
 		</article>
 	</section>
 <!-- INTRO -->
@@ -49,7 +67,7 @@
 		<!-- Intro Heading -->
 		<h2 class="intro-heading">Record my travel</h2>
 		<!-- Intro Description -->
-		<p class="intro-desc">설명내용</p>
+		<p class="intro-desc">여행속에서 기억하고 싶은 순간을 촬영하면 사진과 함께 위치정보가 자동으로 기록되어 보다 편하게 여정을 기록할 수 있는 웹/앱 서비스 프로젝트</p>
 	</section>
 <!-- ALBUMS -->
 	<main class="albums">
@@ -261,12 +279,12 @@
 			<p class="info-desc">사진과 지도를 함께 기록하는 여행다이어리</p>
 		</figure>
 		<!-- Download App -->
-		<article class="app-download">
-			<h3 class="app-download-heading readable-hidden">App Download Heading</h3>
+		<article class="info-app-download">
+			<h3 class="info-app-download-heading readable-hidden">App Download Heading</h3>
 			<!-- App Store -->
-			<button class="app-store"></button>
+			<button class="info-app-store"></button>
 			<!-- Google Play -->
-			<button class="google-play"></button>
+			<button class="info-google-play"></button>
 		</article>
 	</section>
 <!-- FOOTER -->
