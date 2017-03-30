@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>페이스북</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-979.000000, -2249.000000)">
+            <g id="footer" transform="translate(0.000000, 2200.000000)">
+                <g id="페이스북" transform="translate(980.000000, 50.000000)">
+                    <path d="M28.2325367,8 C22.5449953,8 20.5460927,10.7587752 20.5460927,15.3984544 L20.5460927,15.3984544 L20.5460927,18.8110822 L17,18.8110822 L17,24.4987371 L20.5460927,24.4987371 L20.5460927,41 L27.6382781,41 L27.6382781,24.4987371 L32.372888,24.4987371 L33,18.8110822 L27.6382781,18.8110822 L27.644885,15.965295 C27.644885,14.4813885 27.7927709,13.6878291 30.0076194,13.6878291 L30.0076194,13.6878291 L32.9646124,13.6878291 L32.9646124,8 L28.2325367,8 Z" id="Page-1" fill="#FFFFFF"></path>
+                    <circle id="Oval" stroke="#FFFFFF" stroke-width="1.5" cx="25" cy="25" r="25"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

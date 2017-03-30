@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
-	<title>Team Project</title>
+	<title>Record</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -32,8 +32,11 @@
 		<!-- Video Heading	-->
 		<h2 class="video-heading readable-hidden">Video Heading</h2>
 		<!-- Background Video -->
-		<div class="youtubeWrap">
-			<iframe width="1500" height="840"	src="https://www.youtube.com/embed/QrfwnfI1V0o?rel=0&amp;controls=0&amp;showinfo=0?&amp;autoplay=1&amp;loop=1&amp;playlist=QrfwnfI1V0o&amp;modestbranding=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		<div class="video-main">
+			<video src="main-video.mp4" width="100%" height="100%"
+			autoplay loop poster="image/main-image.ong">
+			</video>
+			<!-- <iframe id="main-video"	src="https://www.youtube.com/embed/QrfwnfI1V0o?rel=0&amp;controls=0&amp;showinfo=0?&amp;autoplay=0&amp;loop=1&amp;playlist=QrfwnfI1V0o&amp;modestbranding=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> -->
 		</div>
 		 <!-- poster="imges/main-image.png" -->
 		<!-- Video Description -->
@@ -231,11 +234,12 @@
 <!-- INFO -->
 	<section class="info">
 		<h2 class="info-heading readable-hidden">Info Heading</h2>
+		<div class="info-bg-color">
 		<!-- Background Image -->
 		<figure class="info-contents">
 			<figcaption class="readable-hidden">Info Contents</figcaption>
 			<!-- Info Image -->
-			<img src="images/logo-white.png" class="info-logo" alt="logo">
+			<img src="images/logo-white.svg" class="info-logo" alt="logo">
 			<!-- Info Description -->
 			<p class="info-desc">사진과 지도를 함께 기록하는 여행다이어리</p>
 		</figure>
@@ -260,6 +264,7 @@
 				GET IT ON<br><strong>Google Play</strong>
 			</button>
 		</article>
+		</div>
 	</section>
 
 <!-- FOOTER -->
@@ -275,9 +280,13 @@
 		<!-- SNS Links -->
 		<div class="sns-wrapper">
 			<!-- Facebook -->
-			<a href="https://www.facebook.com/" class="facebook-icon" aria-label="facebook link"><span class="readable-hidden">facebook</span></a>
+			<a href="https://www.facebook.com/" class="facebook-icon" aria-label="facebook link" target="_blank" title="새 창 열기">
+				<img src="images/icon-facebook.png" alt="facebook">
+			</a>
 			<!-- Instagram -->
-			<a href="https://www.instagram.com/" class="instagram-icon" aria-label="instagram link"><span class="readable-hidden">instagram</span></a>
+			<a href="https://www.instagram.com/" class="instagram-icon" aria-label="instagram link" target="_blank" title="새 창 열기">
+				<img src="images/icon-instar.png" alt="instagram">
+			</a>
 		</div>
 		<!-- W3C Validation -->
 		<p class="w3c">
@@ -289,5 +298,6 @@
 		</p>
 	</footer>
 	<script src="js/album-animation.js"></script>
+	<script src="js/iframe.js"></script>
 </body>
 </html>

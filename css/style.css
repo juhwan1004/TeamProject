@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url(fonts.css);
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import "fonts.css";
+@import "http://fonts.googleapis.com/earlyaccess/notosanskr.css";
 /* ---------------- Reset Style ---------------- */
 *,
 *::before,
@@ -76,7 +76,7 @@ a {
 }
 
 #header-search-input {
-	vertical-align: top;
+	/*vertical-align: top;*/
   width: 200px;
 	height: 30px;
 	border: 0.5px dotted #c0c0c0;
@@ -92,7 +92,6 @@ a {
   cursor: pointer;
 }
 
-
 .sign-in, .sign-up {
   cursor: pointer;
 	margin: 15px 5px 5px 5px;
@@ -105,7 +104,7 @@ a {
 	background: none;
   color: #2196F3;
   border-radius: 5px;
-  border: 1px solid #2196F3;
+  border: 0.5px solid #2196F3;
 	text-align: center;
 }
 
@@ -118,6 +117,7 @@ a {
   display: inline-block;
   font-size: 0.63rem;
 	padding: 0.5rem;
+	margin-right: 20px;
 }
 
 /* ---------------- //Header ---------------- */
@@ -130,16 +130,15 @@ a {
 }
 
 /* 반응형 */
- /*.youtubeWrap {
+ /*.video-main video {
   position: relative;
-  width: 100%;
-	margin: auto;
-  padding-bottom: 56.25%;
-}
-.youtubeWrap iframe {
+  width: 100px;
+	height: 50px;
+}*/
+/*.youtubeWrap iframe {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 720px;
 }*/
 
 .video-contents {
@@ -210,12 +209,13 @@ a {
 
 .intro {
   width: 500px;
-  margin: auto;
+  margin: 5rem auto;
   text-align: center;
 }
 
 .intro-heading {
-  font-size: 1.69rem;
+  font-size: 2.5rem;
+	font-weight: bold;
 }
 
 /* ---------------- //Intro ---------------- */
@@ -352,24 +352,42 @@ a {
 
 /* ---------------- Info ---------------- */
 .info {
+	position: relative;
 	padding-top: 6.25rem;
 	background-image: url(../images/info-img.png);
 	background-size: cover;
 	text-align: center;
 	color: #fff;
 	/* 사진 삽입 전 임시 높이 */
-	height: 25rem;
+	height: 20rem;
+}
+
+.info-bg-color {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.6 );
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.info-contents {
+	margin-top: 5rem;
 }
 
 .info-contents img {
 	width: 250px;
 }
 
+.info-desc {
+	margin-top: 0;
+}
+
 /* app 다운로드 버튼 */
 .info-app-download {
   position: absolute;
-  top: 600px;
-  left: 150px;
+  top: 12rem;
+  left: 28.13rem;
 }
 
 .info-app-store, .info-google-play {
@@ -411,32 +429,45 @@ a {
 
 /* ---------------- Footer ---------------- */
 .footer {
-	padding: 0 3.13rem;
-	background: #020a16;
-	color: #fff;
+	width: 1200px;
+	background: #000000;
+	color: #ffffff;
+	position: relative;
 }
+
+.footer-heading {
+	padding: 20px 5px 5px 30px;
+}
+
 .footer-address {
+	color: #979797;
+	font-style: normal;
+	font-size: 0.88rem;
 	display: inline-block;
+	padding: 5px 5px 5px 30px;
+	line-height: 1.3;
 }
+
+.footer-address a {
+	color: #E91E63;
+}
+
 /* SNS Links */
 .sns-wrapper {
-	float: right;
+	position: absolute;
+	top: 20px;
+	left: 1085px;
 }
-.facebook-icon, .instagram-icon {
-	display: inline-block;
-	width: 3.13rem;
-	height: 0;
-	padding-bottom: 3.13rem;
-}
-.facebook-icon {
-	background-image: url('../images/icon-facebook.png');
-}
-.instagram-icon {
-	background-image: url('../images/icon-instar.png');
+
+.facebook-icon img, .instagram-icon img {
+	margin: 2px;
+	width: 40px;
 }
 /* //SNS Links */
 /* W3C Mark */
 .w3c {
-	margin-bottom: 0;
+	position: relative;
+	left: 30px;
+	padding-bottom: 10px;
 }
 /* ---------------- //Footer ---------------- */
