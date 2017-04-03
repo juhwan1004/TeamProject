@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url(fonts.css);
-@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import "fonts.css";
+@import "http://fonts.googleapis.com/earlyaccess/notosanskr.css";
 /* ---------------- Reset Style ---------------- */
 *,
 *::before,
@@ -14,6 +14,11 @@ body, h1, h2, h3, figure {
 	margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
 }
+
+body {
+	padding-top: 60px;
+}
+
 a {
 	text-decoration: none;
 }
@@ -49,15 +54,22 @@ a {
 
 /* ---------------- Header ---------------- */
 .header {
-  width: 1200px;
-  margin: auto;
+  width: 100%;
+	max-width: 1920px;
+	min-width: 1200px;
   display: flex;
-	position: relative;
-  /*background: yellow;*/
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	padding: 5px 50px 5px 80px;
+	height: 60px;
+	background: #fff;
+  transition: top 0.2s ease-in-out;
+	z-index: 1;
 }
 
 .header-logo {
-  margin: 5px 10px 5px 20px;
+  margin: 0px 10px 5px 20px;
 }
 
 .header-logo img {
@@ -71,12 +83,12 @@ a {
 }
 
 .header-search {
-  margin: 15px 10px 5px auto;
+  margin: 10px 10px 5px auto;
   font-size: 0;
 }
 
 #header-search-input {
-	vertical-align: top;
+	/*vertical-align: top;*/
   width: 200px;
 	height: 30px;
 	border: 0.5px dotted #c0c0c0;
@@ -92,10 +104,9 @@ a {
   cursor: pointer;
 }
 
-
 .sign-in, .sign-up {
   cursor: pointer;
-	margin: 15px 5px 5px 5px;
+	margin: 10px 5px 5px 5px;
 	height: 30px;
 }
 
@@ -105,7 +116,7 @@ a {
 	background: none;
   color: #2196F3;
   border-radius: 5px;
-  border: 1px solid #2196F3;
+  border: 0.5px solid #2196F3;
 	text-align: center;
 }
 
@@ -118,6 +129,7 @@ a {
   display: inline-block;
   font-size: 0.63rem;
 	padding: 0.5rem;
+	margin-right: 20px;
 }
 
 /* ---------------- //Header ---------------- */
@@ -126,20 +138,21 @@ a {
 
 .video {
   width: 100%;
+	max-width: 1920px;
+	min-width: 1200px;
   margin: auto;
 }
 
 /* 반응형 */
- /*.youtubeWrap {
+ /*.video-main video {
   position: relative;
-  width: 100%;
-	margin: auto;
-  padding-bottom: 56.25%;
-}
-.youtubeWrap iframe {
+  width: 100px;
+	height: 50px;
+}*/
+/*.youtubeWrap iframe {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 720px;
 }*/
 
 .video-contents {
@@ -210,12 +223,13 @@ a {
 
 .intro {
   width: 500px;
-  margin: auto;
+  margin: 5rem auto;
   text-align: center;
 }
 
 .intro-heading {
-  font-size: 1.69rem;
+  font-size: 2.5rem;
+	font-weight: bold;
 }
 
 /* ---------------- //Intro ---------------- */
@@ -227,6 +241,7 @@ a {
 	background: transparent;
 	color: #fff;
 	cursor: pointer;
+	font-size: 0.75rem;
 }
 .button-like:hover, .button-share:hover {
 	color: #2196F3;
@@ -235,13 +250,13 @@ a {
 	content: '\e800';
 	font-family: 'fontello';
 	margin: 0 5px;
-	color: #ff0000;
+	color: #ffffff;
 }
 .button-share::before {
 	content: '\e801';
 	font-family: 'fontello';
 	margin: 0 5px;
-	color: #fff;
+	color: #ffffff;
 }
 .button-more {
 	width: 5rem;
@@ -260,6 +275,7 @@ a {
 	cursor: pointer;
 }
 /* button style */
+
 .album-wrapper {
 	width: 100%;
 	display: flex;
@@ -270,6 +286,8 @@ a {
 	height: 0;
 	padding-bottom: 25%;
 }
+
+
 /*----------------------------- 수정필요(bg link image)*/
 .add-album {
 	text-align: center;
@@ -280,9 +298,13 @@ a {
 	position: relative;
 	padding-bottom: 100%;
 	height: 0;
+	background: #fff;
+	color: #51b1fe;
+	font-size: 12rem;
 }
 .add-album-link:hover {
-	background: #FA4747;
+	background: #51b1fe;
+	color: #fff;
 }
 /*----------------------------- //수정필요*/
 .button-wrapper {
@@ -308,7 +330,7 @@ a {
 }*/
 /*----------------------------- //수정필요*/
 .button-more {
-	margin-bottom: 2.5rem;
+	margin-bottom: 1rem;
 }
 .contents-wrap {
 	position: absolute;
@@ -316,10 +338,20 @@ a {
 	left: 0;
 	width: 100%;
 	height: 0;
-	padding-top: 10.63rem;
+	padding-top: 11.3rem;
 	text-align: center;
 	color: #fff;
 }
+
+.album-local-name {
+	margin: 0;
+	color: rgb(41, 235, 206);
+}
+
+.album-title {
+	margin: 0 0 20px 0;
+}
+
 .button-like, .button-share {
 	margin: 0 10px;
 }
@@ -328,13 +360,16 @@ a {
 	width: 50%;
 	height: 0;
 	padding-bottom: 25%;
-	background-image: url(../images/section-img-count.png);
+	background-image: url(../images/section-img-count-01.png);
 	text-align: center;
 	color: #fff;
 }
 .album-count-heading {
 	margin-top: 5rem;
+	font-weight: 300;
 }
+
+
 .album-count-display {
 	width: 15rem;
 	height: 5rem;
@@ -352,24 +387,42 @@ a {
 
 /* ---------------- Info ---------------- */
 .info {
+	position: relative;
 	padding-top: 6.25rem;
 	background-image: url(../images/info-img.png);
 	background-size: cover;
 	text-align: center;
 	color: #fff;
 	/* 사진 삽입 전 임시 높이 */
-	height: 25rem;
+	height: 20rem;
+}
+
+.info-bg-color {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.6 );
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.info-contents {
+	margin-top: 5rem;
 }
 
 .info-contents img {
 	width: 250px;
 }
 
+.info-desc {
+	margin-top: 0;
+}
+
 /* app 다운로드 버튼 */
 .info-app-download {
   position: absolute;
-  top: 600px;
-  left: 150px;
+  top: 12rem;
+  left: 28.13rem;
 }
 
 .info-app-store, .info-google-play {
@@ -411,32 +464,45 @@ a {
 
 /* ---------------- Footer ---------------- */
 .footer {
-	padding: 0 3.13rem;
-	background: #020a16;
-	color: #fff;
+	width: 1200px;
+	background: #000000;
+	color: #ffffff;
+	position: relative;
 }
+
+.footer-heading {
+	padding: 20px 5px 5px 30px;
+}
+
 .footer-address {
+	color: #979797;
+	font-style: normal;
+	font-size: 0.88rem;
 	display: inline-block;
+	padding: 5px 5px 5px 30px;
+	line-height: 1.3;
 }
+
+.footer-address a {
+	color: #E91E63;
+}
+
 /* SNS Links */
 .sns-wrapper {
-	float: right;
+	position: absolute;
+	top: 20px;
+	left: 1085px;
 }
-.facebook-icon, .instagram-icon {
-	display: inline-block;
-	width: 3.13rem;
-	height: 0;
-	padding-bottom: 3.13rem;
-}
-.facebook-icon {
-	background-image: url('../images/icon-facebook.png');
-}
-.instagram-icon {
-	background-image: url('../images/icon-instar.png');
+
+.facebook-icon img, .instagram-icon img {
+	margin: 2px;
+	width: 40px;
 }
 /* //SNS Links */
 /* W3C Mark */
 .w3c {
-	margin-bottom: 0;
+	position: relative;
+	left: 30px;
+	padding-bottom: 10px;
 }
 /* ---------------- //Footer ---------------- */

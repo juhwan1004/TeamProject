@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
-	<title>Team Project</title>
+	<title>Record</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/sign_in.css">
 	<script src="https://unpkg.com/vue"></script>
@@ -34,8 +34,11 @@
 		<!-- Video Heading	-->
 		<h2 class="video-heading readable-hidden">Video Heading</h2>
 		<!-- Background Video -->
-		<div class="youtubeWrap">
-			<iframe width="1500" height="840"	src="https://www.youtube.com/embed/QrfwnfI1V0o?rel=0&amp;controls=0&amp;showinfo=0?&amp;autoplay=1&amp;loop=1&amp;playlist=QrfwnfI1V0o&amp;modestbranding=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		<div class="video-main">
+			<video src="video/main-video.mp4" width="100%" height="100%"
+			autoplay loop poster="images/main-image.png">
+			</video>
+			<!-- <iframe id="main-video"	src="https://www.youtube.com/embed/QrfwnfI1V0o?rel=0&amp;controls=0&amp;showinfo=0?&amp;autoplay=0&amp;loop=1&amp;playlist=QrfwnfI1V0o&amp;modestbranding=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> -->
 		</div>
 		 <!-- poster="imges/main-image.png" -->
 		<!-- Video Description -->
@@ -81,17 +84,17 @@
 			<!-- Add Album -->
 			<div class="add-album">
 				<!-- Move to My Page -->
-				<a href="#" class="add-album-link">+</a>
+				<a href="#" class="add-album-link" title="앨범 추가">+</a>
 			</div>
 			<!-- Album -->
 			<article class="album">
 				<h3 class="album-heading readable-hidden">Album Heading</h3>
-				<div class="centered">
+					<div class="centered">
 					<img src="images/section-img-01.png" class="album-image landscape" alt="image">
-				</div>
+					</div>
 				<div class="contents-wrap">
 					<p class="album-local-name">Korea</p>
-					<p class="album-title">소매물도 여행</p>
+					<p class="album-title">봄, 벚꽃, 향기 여행코스</p>
 					<button class="button-more">+ move</button>
 					<div class="button-share-wrap">
 						<button class="button-like">찜하기</button>
@@ -121,7 +124,7 @@
 				</div>
 				<div class="contents-wrap">
 					<p class="album-local-name">Korea</p>
-					<p class="album-title">소매물도 여행</p>
+					<p class="album-title">제주도 자유여행</p>
 					<button class="button-more">+ move</button>
 					<div class="button-share-wrap">
 						<button class="button-like">찜하기</button>
@@ -136,7 +139,7 @@
 				</div>
 				<div class="contents-wrap">
 					<p class="album-local-name">Korea</p>
-					<p class="album-title">소매물도 여행</p>
+					<p class="album-title">서울 불꽃 출제</p>
 					<button class="button-more">+ move</button>
 					<div class="button-share-wrap">
 						<button class="button-like">찜하기</button>
@@ -151,7 +154,7 @@
 				</div>
 				<div class="contents-wrap">
 					<p class="album-local-name">Korea</p>
-					<p class="album-title">소매물도 여행</p>
+					<p class="album-title">새해소망 여행</p>
 					<button class="button-more">+ move</button>
 					<div class="button-share-wrap">
 						<button class="button-like">찜하기</button>
@@ -175,7 +178,7 @@
 				</div>
 				<div class="contents-wrap">
 					<p class="album-local-name">Korea</p>
-					<p class="album-title">소매물도 여행</p>
+					<p class="album-title">계룡산 등산</p>
 					<button class="button-more">+ move</button>
 					<div class="button-share-wrap">
 						<button class="button-like">찜하기</button>
@@ -190,7 +193,7 @@
 				</div>
 				<div class="contents-wrap">
 					<p class="album-local-name">Korea</p>
-					<p class="album-title">소매물도 여행</p>
+					<p class="album-title">경기도 이천 여행</p>
 					<button class="button-more">+ move</button>
 					<div class="button-share-wrap">
 						<button class="button-like">찜하기</button>
@@ -205,7 +208,7 @@
 				</div>
 				<div class="contents-wrap">
 					<p class="album-local-name">Korea</p>
-					<p class="album-title">소매물도 여행</p>
+					<p class="album-title">트레킹 여행</p>
 					<button class="button-more">+ move</button>
 					<div class="button-share-wrap">
 						<button class="button-like">찜하기</button>
@@ -220,7 +223,7 @@
 				</div>
 				<div class="contents-wrap">
 					<p class="album-local-name">Korea</p>
-					<p class="album-title">소매물도 여행</p>
+					<p class="album-title">벚꽃 엔딩</p>
 					<button class="button-more">+ move</button>
 					<div class="button-share-wrap">
 						<button class="button-like">찜하기</button>
@@ -233,11 +236,12 @@
 <!-- INFO -->
 	<section class="info">
 		<h2 class="info-heading readable-hidden">Info Heading</h2>
+		<div class="info-bg-color">
 		<!-- Background Image -->
 		<figure class="info-contents">
 			<figcaption class="readable-hidden">Info Contents</figcaption>
 			<!-- Info Image -->
-			<img src="images/logo-white.png" class="info-logo" alt="logo">
+			<img src="images/logo-white.svg" class="info-logo" alt="logo">
 			<!-- Info Description -->
 			<p class="info-desc">사진과 지도를 함께 기록하는 여행다이어리</p>
 		</figure>
@@ -262,6 +266,7 @@
 				GET IT ON<br><strong>Google Play</strong>
 			</button>
 		</article>
+		</div>
 	</section>
 
 <!-- FOOTER -->
@@ -277,9 +282,13 @@
 		<!-- SNS Links -->
 		<div class="sns-wrapper">
 			<!-- Facebook -->
-			<a href="https://www.facebook.com/" class="facebook-icon" aria-label="facebook link"><span class="readable-hidden">facebook</span></a>
+			<a href="https://www.facebook.com/" class="facebook-icon" aria-label="facebook link" target="_blank" title="새 창 열기">
+				<img src="images/icon-facebook.png" alt="facebook">
+			</a>
 			<!-- Instagram -->
-			<a href="https://www.instagram.com/" class="instagram-icon" aria-label="instagram link"><span class="readable-hidden">instagram</span></a>
+			<a href="https://www.instagram.com/" class="instagram-icon" aria-label="instagram link" target="_blank" title="새 창 열기">
+				<img src="images/icon-instar.png" alt="instagram">
+			</a>
 		</div>
 		<!-- W3C Validation -->
 		<p class="w3c">
