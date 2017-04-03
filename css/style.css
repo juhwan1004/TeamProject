@@ -16,7 +16,7 @@ body, h1, h2, h3, figure {
 }
 
 body {
-	padding-top: 60px;
+	/*padding-top: 60px;*/
 }
 
 a {
@@ -222,7 +222,7 @@ a {
 /* ---------------- Intro ---------------- */
 
 .intro {
-  width: 500px;
+  width: 31.25rem;
   margin: 5rem auto;
   text-align: center;
 }
