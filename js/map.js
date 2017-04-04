@@ -1,6 +1,10 @@
 // Variables
-var map, markers, image, spots;
+var map, 
+		markers, 
+		image, 
+		spots;
 
+// -------------------------------------- Google Map
 markers = [];
 image = {
 	url: 'images/marker-icon.png'
@@ -43,14 +47,12 @@ function initMap() {
 
 	createMarker();
 }
-
 // Create Markers
 function createMarker() {
 	for (var i = 0; i < spots.length; i++) {
 		setMarkers(spots[i]);
 	}
 }
-
 // Set Markers
 function setMarkers(spot) {
 	window.setTimeout(function () {
@@ -70,6 +72,34 @@ function setMarkers(spot) {
 		}));
 	});
 }
+
+// -------------------------------------- Google Map
+
+// -------------------------------------- Computed Height
+
+// Variables
+var diary_contents, 
+		diary_contents_height, 
+		map, 
+		map_height,
+		header_height, 
+		panel_height;
+
+// 참조 가져오기
+diary_contents = document.querySelector('.diary-contents');
+map = document.querySelector('#map');
+// 요소의 Height 값 가져오기
+header_height = getStyle(document.querySelector('.header'), 'height');
+panel_height = getStyle(document.querySelector('.diary-panel'), 'height');
+// 높이 계산
+extra_height = parseInt(header_height)+parseInt(panel_height);
+diary_contents_height = checkDisplayHeight()-extra_height;
+map_height = checkDisplayHeight()-header_height;
+// 요소 높이 설정
+diary_contents.setAttribute('style', 'height:'+ diary_contents_height +'px;');
+map.setAttribute('style', 'height:'+ map_height +'px;');
+
+// -------------------------------------- Computed Height
 
 
 
