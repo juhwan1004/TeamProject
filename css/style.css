@@ -22,6 +22,11 @@ body {
 a {
 	text-decoration: none;
 }
+
+fieldset {
+	margin: 0;
+	padding: 0;
+}
 /* ---------------- //Reset Style ---------------- */
 
 /* ---------------- 공통 스타일 ---------------- */
@@ -185,19 +190,13 @@ a {
 .header-app-store, .header-google-play {
   border: none;
   border-radius: 5px;
-	padding: 10px;
   background: #E91E63;
   cursor: pointer;
   margin: 0 10px 10px 0;
-  white-space: nowrap;
-	color: #ffffff;
-	font-size: 0.4rem;
-	text-align: left;
 	position: relative;
-	width: 150px;
 }
 
-.header-app-store img, .header-google-play img {
+/*.header-app-store img, .header-google-play img {
   height: 30px;
   margin: 0 5px 0 5px;
 	vertical-align: top;
@@ -215,7 +214,7 @@ a {
 	top: 23px;
 	left: 53px;
 	font-size: 0.88rem;
-}
+}*/
 
 /* ---------------- //Video ---------------- */
 
@@ -420,27 +419,20 @@ a {
 
 /* app 다운로드 버튼 */
 .info-app-download {
-  position: absolute;
-  top: 12rem;
-  left: 28.13rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .info-app-store, .info-google-play {
   border: none;
   border-radius: 5px;
-	padding: 10px;
   background: #E91E63;
   cursor: pointer;
-  margin: 0 10px 10px 0;
-  white-space: nowrap;
-	color: #ffffff;
-	font-size: 0.4rem;
-	text-align: left;
-	position: relative;
-	width: 150px;
+  margin: 0 10px 0px 10px;
 }
 
-.info-app-store img, .info-google-play img {
+/*.info-app-store img, .info-google-play img {
   height: 30px;
   margin: 0 5px 0 5px;
 	vertical-align: top;
@@ -458,7 +450,7 @@ a {
 	top: 23px;
 	left: 53px;
 	font-size: 0.88rem;
-}
+}*/
 
 /* ---------------- //Info ---------------- */
 

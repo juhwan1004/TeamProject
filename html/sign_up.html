@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign Up Modal</title>
+	<link rel="stylesheet" type="text/css" href="../css/sign_up.css">
+</head>
+<body>
+	<button class="button-modal">Sign Up</button>
+	<div class="sign-up-wrap">
+	<!-- Header -->
+		<div class="sign-up-header">
+			<p class="sign-up-title">Sign up to Record</p>
+			<button class="button-closed">x</button>
+		</div>
+	<!-- Contents -->
+		<div class="sign-up-contents">
+			<!-- SNS Sign In -->
+			<div class="sns-sign-up">
+				<p class="sns-promise">We promise never to share anything without your permission</p>
+			</div>
+			<!-- e-mail Sign In -->
+			<form action="" id="email-sign-up">
+				<fieldset class="form-inner-wrap">
+					<legend class="form-title">Sign Up with e-mail</legend>
+					<!-- input email -->
+					<input type="email" class="input-email" name="email" aira-label="user e-mail" placeholder="E-mail">
+					<!-- input password -->
+					<input type="password" class="input-password" name="password" aira-label="user password" placeholder="Password">
+					<!-- input confirm password -->
+					<input type="password" class="input-confirm-password" name="confirmpassword" aira-label="confirm password" placeholder="Confirm Password">
+					<!-- checkbox -->
+					<div class="checkbox-wrap">
+						<input type="checkbox" id="checkbox-save-email">
+						<label for="checkbox-save-email" class="checkbox-label">Remember me</label>
+					</div>
+					<!-- submit button -->
+					<button type="submit" class="button-sign-up">Sign Up</button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
