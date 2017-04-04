@@ -12,3 +12,20 @@
 
 .icon-heart:before { content: '\e800'; } /* '' */
 .icon-export:before { content: '\e801'; } /* '' */
+
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../icon-font/map-icon-font/fontello.eot?82546891');
+  src: url('../icon-font/map-icon-font/fontello.eot?82546891#iefix') format('embedded-opentype'),
+       url('../icon-font/map-icon-font/fontello.woff2?82546891') format('woff2'),
+       url('../icon-font/map-icon-font/fontello.woff?82546891') format('woff'),
+       url('../icon-font/map-icon-font/fontello.ttf?82546891') format('truetype'),
+       url('../icon-font/map-icon-font/fontello.svg?82546891#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+.icon-scroll-man:before { content: '\e800'; } /* '' */
+.icon-share:before { content: '\f1e0'; } /* '' */
+.icon-user-plus:before { content: '\f234'; } /* '' */
