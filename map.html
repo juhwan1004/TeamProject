@@ -26,52 +26,55 @@
 		<!-- Sign Up -->
 		<button class="sign-up">Create an account</button>
 	</header>
-	<!-- DIARY -->
-	<section class="diary">
-		<h2 class="diary-heading readable-hidden">Diary Heading</h2>
-		<!-- Diary Panel -->
-		<section class="diary-panel">
-			<h3 class="diary-panel-heading readable-hidden">diary Panel</h3>
-			<div class="diary-panel-inner-wrap">
-				<!-- User Info -->
-				<div class="diary-user">User E-mail Here !</div>
-				<div class="diary-panel-button-wrap">
-					<!-- Share Button -->
-					<button class="diary-panel-button-share">Share</button>
-					<!-- Follow Button -->
-					<button class="diary-panel-button-follow">Follow</button>
+	<div class="wrapper">
+		<!-- DIARY -->
+		<section class="diary">
+			<h2 class="diary-heading readable-hidden">Diary Heading</h2>
+			<!-- Diary Panel -->
+			<section class="diary-panel">
+				<h3 class="diary-panel-heading readable-hidden">diary Panel</h3>
+				<div class="diary-panel-inner-wrap">
+					<!-- User Info -->
+					<div class="diary-user">User E-mail Here !</div>
+					<div class="diary-panel-button-wrap">
+						<!-- Share Button -->
+						<button class="diary-panel-button-share">Share</button>
+						<!-- Follow Button -->
+						<button class="diary-panel-button-follow">Follow</button>
+					</div>
 				</div>
-			</div>
-			<!-- Scroll Man -->
-			<div class="scroll-man">
-				Scroll Man !
-			</div>			
+				<!-- Scroll Man -->
+				<div class="scroll-man">
+					Scroll Man !
+				</div>			
+			</section>
+			<!-- Diary Contents -->
+			<section class="diary-contents">
+				<h3 class="diary-contents-heading readable-hidden">Trip Contents</h3>
+				<!-- Diary Contents Header -->
+				<div class="diary-contents-header">
+					<!-- Diary Contents Cover -->
+					<div class="diary-contents-wrap">
+						<div class="diary-contents-local-name">Local Name</div>
+						<div class="diary-contents-date">Date</div>
+					</div>
+					<!-- Album Statistics -->
+					<div class="diary-contents-statistics-wrap">
+						Statistics
+					</div>
+				</div>
+				<!-- Daily Record -->
+				<div class="diary-record">
+					Record
+				</div>
+			</section>
 		</section>
-		<!-- Diary Contents -->
-		<section class="diary-contents">
-			<h3 class="diary-contents-heading readable-hidden">Trip Contents</h3>
-			<!-- Diary Contents Header -->
-			<div class="diary-contents-header">
-				<!-- Diary Contents Cover -->
-				<div class="diary-contents-wrap">
-					<div class="diary-contents-local-name">Local Name</div>
-					<div class="diary-contents-date">Date</div>
-				</div>
-				<!-- Album Statistics -->
-				<div class="diary-contents-statistics-wrap">
-					Statistics
-				</div>
-			</div>
-			<!-- Daily Record -->
-			<div class="diary-record">
-				Record
-			</div>
-		</section>
-	</section>
-	<!-- Google Map -->
-	<section id="map"></section>
+		<!-- Google Map -->
+		<section id="map"></section>
+	</div>
 
 	<!-- Scripts -->
+	<script src="js/map_helper.js"></script>
 	<script src="js/map.js"></script>
 </body>
 </html>
@@ -79,5 +82,4 @@
 <!-- 
 구글맵 참고 사이트
 https://www.joinc.co.kr/w/Site/Google/Service/GoogleMapAPI
-
  -->
