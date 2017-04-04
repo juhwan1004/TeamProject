@@ -30,9 +30,11 @@ a {
 /* ---------------- //Reset Style ---------------- */
 /* ---------------- Header ---------------- */
 .header {
-  width: 100%;
+  width: 75rem;
+  height: 50px;
   margin: auto;
   display: flex;
+  flex-wrap: nowrap;
 	position: relative;
 }
 .header-logo {
@@ -90,19 +92,25 @@ a {
 	padding: 0.5rem;
 }
 /* ---------------- //Header ---------------- */
+/* ---------------- Wrapper ---------------- */
+.wrapper {
+	min-width: 1200px;
+	height: 100%;
+}
+/* ---------------- //Wrapper ---------------- */
 /* ---------------- Diary ---------------- */
 .diary {
-	display: inline-block;
 	float: left;
 	width: 50%;
+	min-width: 37.5rem;
 	height: 0;
 	padding-bottom: 100%;
-	/*overflow-y: hidden; */
 }	
 /* diary panel */
 .diary-panel {
 	position: fixed;
 	width: 50%;
+	min-width: 37.5rem;
 	height: 5rem;
 }
 .diary-panel-inner-wrap {
@@ -180,8 +188,8 @@ a {
 /* ---------------- //Diary ---------------- */
 /* ---------------- Map ---------------- */
 #map {
-	display: inline-block;
 	width: 50%;
+	min-width: 37.5rem;
 	height: inherit;
 }
 /* ---------------- //Map ---------------- */
