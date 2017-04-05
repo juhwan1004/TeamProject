@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Record</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/sign_in.css">
+	<link rel="stylesheet" href="../css/sign_up.css">
+	<script type="text/javascript"  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+<!-- Skip to Main Content -->
+	<div id="skip"><a href="#albums">Skip to Main Content</a></div>
+<!-- HEADER -->
+	<header class="header">
+		<!-- Logo -->
+		<h1 class="header-logo">
+			<a href="#"><img src="../images/logo.svg" alt="Record"></a>
+		</h1>
+		<!-- Display ID -->
+		<p class="header-display-id">사진과 위치를 함께 기록하는 여행다이어리</p>
+		<!-- Search Bar -->
+		<form class="header-search">
+			<!-- Search input -->
+			<input id="header-search-input" placeholder="Search" aria-label="앨범 검색">
+			<button type="submit" class="header-search-button">검색</button>
+		</form>
+		<!-- Sign In -->
+		<button type="button" class="sign-in">Log in</button>
+		<!-- Sign Up -->
+		<button type="button" class="sign-up">Create an account</button>
+	</header>
+<!-- VIDEO -->
+	<section class="video">
+		<!-- Video Heading	-->
+		<h2 class="video-heading readable-hidden">Video Heading</h2>
+		<!-- Background Video -->
+		<video id="video-main" autoplay loop controls src="../video/main-video.mp4"
+ 		type="video/mp4" poster="../images/main-image.png">
+		</video>
+			<!-- <iframe id="main-video"	src="https://www.youtube.com/embed/QrfwnfI1V0o?rel=0&amp;controls=0&amp;showinfo=0?&amp;autoplay=0&amp;loop=1&amp;playlist=QrfwnfI1V0o&amp;modestbranding=1&amp;showinfo=0" frameborder="0" allowfullscreen></iframe> -->
+		 <!-- poster="imges/main-image.png" -->
+		<!-- Video Description -->
+		<div class="video-contents">
+			<h3 class="video-title">EXPLORE.<br>DREAM.<br>DISCOVER.</h3>
+			<p class="video-desc">We help you track and share your journeys in an easy
+			and beautifyl way, turning your travel moments into
+			lifetime memories. </p>
+		</div>
+		<!-- Download App -->
+		<article class="header-app-download">
+			<h3 class="header-app-download-heading readable-hidden">App Download Heading</h3>
+			<!-- App Store -->
+			<button
+			class="header-app-store" role="link"
+			onclick="window.open('https://itunes.apple.com/kr/genre/ios/id36')"
+			title="App Store 바로가기">
+				<img src="../images/apple-store.svg" alt="logo-apple">
+			</button>
+			<!-- Google Play -->
+			<button
+			class="header-google-play" role="link"
+			onclick="window.open('https://play.google.com/store')"
+			title="Google Store 바로가기">
+				<img src="../images/google-play.svg" alt="logo-googlePlay">
+			</button>
+		</article>
+	</section>
+<!-- INTRO -->
+	<section class="intro">
+		<!-- Intro Heading -->
+		<h2 class="intro-heading">Record my travel</h2>
+		<!-- Intro Description -->
+		<p class="intro-desc">여행속에서 기억하고 싶은 순간을 촬영하면 사진과 함께 위치정보가 자동으로 기록되어 보다 편하게 여정을 기록할 수 있는 웹/앱 서비스 프로젝트</p>
+	</section>
+<!-- ALBUMS -->
+	<main id="albums">
+		<h2 class="albums-heading readable-hidden">Albums Heading</h2>
+		<!-- Album Wrapper -->
+		<div class="album-wrapper">
+			<!-- Add Album -->
+			<div class="add-album">
+				<!-- Move to My Page -->
+				<a href="#" class="add-album-link" title="앨범 추가">+</a>
+			</div>
+			<!-- Album -->
+			<article class="album">
+				<h3 class="album-heading readable-hidden">Album Heading</h3>
+					<div class="centered">
+					<img src="../images/section-img-01.png" class="album-image landscape" alt="image">
+					</div>
+				<div class="contents-wrap">
+					<p class="album-local-name">Korea</p>
+					<p class="album-title">봄, 벚꽃, 향기 여행코스</p>
+					<button class="button-more">+ move</button>
+					<div class="button-share-wrap">
+						<button class="button-like">찜하기</button>
+						<button class="button-share">공유하기</button>
+					</div>
+				</div>
+			</article>
+			<article class="album">
+				<h3 class="album-heading readable-hidden">Album Heading</h3>
+				<div class="centered">
+					<img src="../images/section-img-02.png" class="album-image landscape" alt="image">
+				</div>
+				<div class="contents-wrap">
+					<p class="album-local-name">Korea</p>
+					<p class="album-title">소매물도 여행</p>
+					<button class="button-more">+ move</button>
+					<div class="button-share-wrap">
+						<button class="button-like">찜하기</button>
+						<button class="button-share">공유하기</button>
+					</div>
+				</div>
+			</article>
+			<article class="album">
+				<h3 class="album-heading readable-hidden">Album Heading</h3>
+				<div class="centered">
+					<img src="../images/section-img-03.png" class="album-image landscape" alt="image">
+				</div>
+				<div class="contents-wrap">
+					<p class="album-local-name">Korea</p>
+					<p class="album-title">제주도 자유여행</p>
+					<button class="button-more">+ move</button>
+					<div class="button-share-wrap">
+						<button class="button-like">찜하기</button>
+						<button class="button-share">공유하기</button>
+					</div>
+				</div>
+			</article>
+			<article class="album">
+				<h3 class="album-heading readable-hidden">Album Heading</h3>
+				<div class="centered">
+					<img src="../images/section-img-04.png" class="album-image landscape" alt="image">
+				</div>
+				<div class="contents-wrap">
+					<p class="album-local-name">Korea</p>
+					<p class="album-title">서울 불꽃 축제</p>
+					<button class="button-more">+ move</button>
+					<div class="button-share-wrap">
+						<button class="button-like">찜하기</button>
+						<button class="button-share">공유하기</button>
+					</div>
+				</div>
+			</article>
+			<article class="album">
+				<h3 class="album-heading readable-hidden">Album Heading</h3>
+				<div class="centered">
+					<img src="../images/section-img-05.png" class="album-image landscape" alt="image">
+				</div>
+				<div class="contents-wrap">
+					<p class="album-local-name">Korea</p>
+					<p class="album-title">새해소망 여행</p>
+					<button class="button-more">+ move</button>
+					<div class="button-share-wrap">
+						<button class="button-like">찜하기</button>
+						<button class="button-share">공유하기</button>
+					</div>
+				</div>
+			</article>
+			<!-- Album Count -->
+			<article class="album-count">
+				<!-- Album Count Heading -->
+				<h3 class="album-count-heading">현재 <strong>나만의 여행</strong> 등록 수</h3>
+				<!-- Album Count Display -->
+				<div class="album-count-display"><span class="album-count-number">999</span></div>
+				<!-- Album Count Description -->
+				<p class="album-count-desc">지금 자신의 여행을 사진과 함께 기록하세요!</p>
+			</article>
+			<article class="album">
+				<h3 class="album-heading readable-hidden">Album Heading</h3>
+				<div class="centered">
+					<img src="../images/section-img-06.png" class="album-image landscape" alt="image">
+				</div>
+				<div class="contents-wrap">
+					<p class="album-local-name">Korea</p>
+					<p class="album-title">계룡산 등산</p>
+					<button class="button-more">+ move</button>
+					<div class="button-share-wrap">
+						<button class="button-like">찜하기</button>
+						<button class="button-share">공유하기</button>
+					</div>
+				</div>
+			</article>
+			<article class="album">
+				<h3 class="album-heading readable-hidden">Album Heading</h3>
+				<div class="centered">
+					<img src="../images/section-img-07.png" class="album-image landscape" alt="image">
+				</div>
+				<div class="contents-wrap">
+					<p class="album-local-name">Korea</p>
+					<p class="album-title">경기도 이천 여행</p>
+					<button class="button-more">+ move</button>
+					<div class="button-share-wrap">
+						<button class="button-like">찜하기</button>
+						<button class="button-share">공유하기</button>
+					</div>
+				</div>
+			</article>
+			<article class="album">
+				<h3 class="album-heading readable-hidden">Album Heading</h3>
+				<div class="centered">
+					<img src="../images/section-img-08.png" class="album-image landscape" alt="image">
+				</div>
+				<div class="contents-wrap">
+					<p class="album-local-name">Korea</p>
+					<p class="album-title">트레킹 여행</p>
+					<button class="button-more">+ move</button>
+					<div class="button-share-wrap">
+						<button class="button-like">찜하기</button>
+						<button class="button-share">공유하기</button>
+					</div>
+				</div>
+			</article>
+			<article class="album">
+				<h3 class="album-heading readable-hidden">Album Heading</h3>
+				<div class="centered">
+					<img src="../images/section-img-09.png" class="album-image landscape" alt="image">
+				</div>
+				<div class="contents-wrap">
+					<p class="album-local-name">Korea</p>
+					<p class="album-title">벚꽃 엔딩</p>
+					<button class="button-more">+ move</button>
+					<div class="button-share-wrap">
+						<button class="button-like">찜하기</button>
+						<button class="button-share">공유하기</button>
+					</div>
+				</div>
+			</article>
+		</div>
+	</main>
+<!-- INFO -->
+<section class="info">
+	<h2 class="info-heading readable-hidden">Info Heading</h2>
+	<div class="info-bg-color">
+		<!-- Background Image -->
+		<figure class="info-contents">
+			<figcaption class="readable-hidden">Info Contents</figcaption>
+			<!-- Info Image -->
+			<img src="../images/logo-white.svg" class="info-logo" alt="logo">
+			<!-- Info Description -->
+			<p class="info-desc">사진과 지도를 함께 기록하는 여행다이어리</p>
+		</figure>
+
+		<!-- Download App -->
+		<article class="info-app-download">
+			<h3 class="info-app-download-heading readable-hidden">App Download Heading</h3>
+			<!-- App Store -->
+			<button
+			class="info-app-store" role="link"
+			onclick="window.open('https://itunes.apple.com/kr/genre/ios/id36')"
+			title="App Store 바로가기">
+				<img src="../images/apple-store.svg" alt="logo-apple">
+			</button>
+			<!-- Google Play -->
+			<button
+			class="info-google-play" role="link"
+			onclick="window.open('https://play.google.com/store')"
+			title="Google Store 바로가기">
+				<img src="../images/google-play.svg" alt="logo-googlePlay">
+			</button>
+		</article>
+	</div>
+</section>
+
+<!-- FOOTER -->
+	<footer class="footer">
+		<!-- Footer Heading -->
+		<h2 class="footer-heading">Record</h2>
+		<!-- Address -->
+		<address class="footer-address">
+			서울 특별시 서초구 강남대로105길 12, 4층, 4-B호<br>
+			Tel. 02-501-9396<br>
+			If you see any bugs, please <a href="help@record.com">contact us</a>.
+		</address>
+		<!-- SNS Links -->
+		<div class="sns-wrapper">
+			<!-- Facebook -->
+			<a href="https://www.facebook.com/" class="facebook-icon" aria-label="facebook link" target="_blank" title="새 창 열기">
+				<img src="../images/icon-facebook.png" alt="facebook">
+			</a>
+			<!-- Instagram -->
+			<a href="https://www.instagram.com/" class="instagram-icon" aria-label="instagram link" target="_blank" title="새 창 열기">
+				<img src="../images/icon-instar.png" alt="instagram">
+			</a>
+		</div>
+		<!-- W3C Validation -->
+		<p class="w3c">
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    	<img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="올바른 CSS입니다!" />
+    	</a>
+		</p>
+	</footer>
+
+<!-- sign in modal -->
+<div class="modal">
+<section class="sign-in-modal">
+	<div class="sign-in-view">
+		<div class="sign-in-wrap">
+		<!-- Header -->
+			<div class="sign-in-header">
+				<p class="sign-in-title">Sign in to Record</p>
+				<button type="button" class="button-closed">x</button>
+			</div>
+		<!-- Contents -->
+			<div class="sign-in-contents">
+				<!-- SNS Sign In -->
+				<div class="sns-sign-in">
+					<!-- facebook -->
+					<button
+					type="button"
+					class="button-sign-in-facebook">
+						<img src="../images/logo-facebook.svg" alt="facebook login" title="facebook login">
+					</button>
+					<!-- google -->
+					<button
+					type="button"
+					class="button-sign-in-google">
+						<img src="../images/logo-google.svg" alt="google login" title="google login">
+					</button>
+					<p class="sns-promise">We promise never to share anything without your permission</p>
+				</div>
+				<!-- e-mail Sign In -->
+				<form action="" id="email-sign-in">
+					<fieldset class="form-inner-wrap">
+						<legend class="form-title">Sign In with e-mail</legend>
+						<!-- input email -->
+						<input type="email" class="input-email" name="email" aira-label="user e-mail" placeholder="E-mail">
+						<!-- input password -->
+						<input type="password" class="input-password" name="password" aira-label="user password" placeholder="Password">
+						<!-- checkbox -->
+						<div class="checkbox-wrap">
+							<input type="checkbox" id="checkbox-save-email">
+							<label for="checkbox-save-email" class="checkbox-label">Remember me</label>
+						</div>
+						<!-- submit button -->
+						<button type="submit" class="button-sign-in">Sign In</button>
+					</fieldset>
+				</form>
+			</div>
+		<!-- Create an Account -->
+			<div class="create-account-wrap">
+				<p class="create-account-title">New to Record</p>
+				<button class="button-create-account">Create an account</button>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- sing up modal -->
+<section class="sign-up-modal">
+	<div class="sign-up-view">
+		<div class="sign-up-wrap">
+		<!-- Header -->
+			<div class="sign-up-header">
+				<p class="sign-up-title">Sign up to Record</p>
+				<button type="button" class="button-closed">x</button>
+			</div>
+		<!-- Contents -->
+			<div class="sign-up-contents">
+				<!-- SNS Sign In -->
+				<div class="sns-sign-up">
+					<p class="sns-promise">We promise never to share anything without your permission</p>
+				</div>
+				<!-- e-mail Sign In -->
+				<form action="" id="email-sign-up">
+					<fieldset class="form-inner-wrap">
+						<legend class="form-title">Sign Up with e-mail</legend>
+						<!-- input email -->
+						<input type="email" class="input-email" name="email" aira-label="user e-mail" placeholder="E-mail">
+						<!-- input password -->
+						<input type="password" class="input-password" name="password" aira-label="user password" placeholder="Password">
+						<!-- input confirm password -->
+						<input type="password" class="input-confirm-password" name="confirmpassword" aira-label="confirm password" placeholder="Confirm Password">
+						<!-- checkbox -->
+						<div class="checkbox-wrap">
+							<input type="checkbox" id="checkbox-email">
+							<label for="checkbox-save-email" class="checkbox-label">Remember me</label>
+						</div>
+						<!-- submit button -->
+						<button type="submit" class="button-sign-up">Sign Up</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+</div>
+
+	<script src="../js/main-animation.js"></script>
+	<script src="../js/main-page.js"></script>
+</body>
+</html>
