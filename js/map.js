@@ -73,7 +73,7 @@ function setMarkers(spot) {
 	});
 }
 
-// -------------------------------------- Google Map
+// -------------------------------------- //Google Map
 
 // -------------------------------------- Computed Height
 
@@ -83,7 +83,8 @@ var diary_contents,
 		map, 
 		map_height,
 		header_height, 
-		panel_height;
+		panel_height,
+		scroll_man;
 
 // 참조 가져오기
 diary_contents = document.querySelector('.diary-contents');
@@ -99,8 +100,13 @@ map_height = checkDisplayHeight()-header_height;
 diary_contents.setAttribute('style', 'height:'+ diary_contents_height +'px;');
 map.setAttribute('style', 'height:'+ map_height +'px;');
 
-// -------------------------------------- Computed Height
+// -------------------------------------- //Computed Height
 
+// -------------------------------------- Scroll Man
+scroll_man = document.querySelector('.scroll-man');
 
-
-
+diary_contents.onscroll = function () {
+	scroll_man.setAttribute('style', 'left:'+ getScrollPos(diary_contents) +'%;');
+	var left_val = scroll_man.getAttribute('style','left');
+};
+// -------------------------------------- //Scroll Man

@@ -17,6 +17,7 @@ body, h1, h2, h3, figure {
 body { 
 	height: 100%;
 	overflow-y: hidden; 
+	overflow-x: hidden; 
 }
 a {
 	text-decoration: none;
@@ -119,7 +120,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: #C655EB;
+	background: #9dc8c8;
 }
 .diary-panel-button-share, .diary-panel-button-follow { 
 	width: 5rem;
@@ -158,8 +159,46 @@ a {
 }
 /* //diary panel */
 /* scroll man */
-.scroll-man {
+.scroll-man-wrapper {
 	height: 1.88rem;
+	position: relative;
+	background: #47AEA2;
+}
+.scroll-man-line {
+	position: absolute;
+	left: 11px;
+	right: 12px;
+	top: 15px;
+	height: 0.06rem;
+	background: #fff;
+}
+.scroll-man-line::before, .scroll-man-line::after {
+	position: absolute;
+	content: '';
+	display: block;
+	height: 7px;
+	width: 7px;
+	margin-top: -3px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+}
+.scroll-man-line::before {
+	left: -6px;
+}
+.scroll-man-line::after {
+	right: -6px;
+}
+.scroll-man {
+	position: relative;
+}
+.scroll-man::before {
+	position: absolute;
+	top: 8px;
+	width: 20px;
+	content: '\e800';
+	font-family: fontello;
+	text-align: center;
+	color: #fff;
 	background: #47AEA2;
 }
 /* //scroll man */
@@ -178,7 +217,7 @@ a {
 }
 .diary-contents-wrap {
 	height: 16.25rem;
-	background: yellow;
+	background: #56445d;
 }
 .diary-contents-statistics-wrap {
 	height: 6.25rem;
