@@ -24,3 +24,13 @@ function getStyle(el, prop) {
 		return null;
 	}
 }
+
+/**
+ * 스크롤 위치 계산 헬퍼 함수
+ * @param  {HTMLElement} 스크롤이 동작하는 요소
+ * @return {number}    	 현재 스크롤 위치 값
+ */
+function getScrollPos(el) {
+	return Math.round(el.scrollTop/(el.scrollHeight-el.clientHeight) *97);
+}
+
