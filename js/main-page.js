@@ -1,13 +1,15 @@
-// sign-in, sign-up
-var modal = document.querySelector(".modal");
 
 // sign-in-modal
 var modal_sign_in = document.querySelector(".sign-in-modal");
 var btn_sign_in = document.querySelector(".sign-in");
+var sign_in_wrap = document.querySelector(".sign-in-wrap");
+var button_create_account = document.querySelector(".button-create-account");
+
 
 // sign-up-modal
 var modal_sign_up = document.querySelector(".sign-up-modal");
 var btn_sign_up = document.querySelector(".sign-up");
+var sign_up_wrap = document.querySelector(".sign-up-wrap");
 
 //  open button
 btn_sign_in.onclick = function() {
@@ -17,6 +19,27 @@ btn_sign_in.onclick = function() {
 
 btn_sign_up.onclick = function() {
   // modal_sign_up.style.display = "block";
+  openModal(modal_sign_up);
+}
+
+// 모달창 클릭 이벤트 전파 차단
+sign_in_wrap.onclick = function(e) {
+  // console.log('clicked signWrap');
+  e.stopPropagation();
+}
+
+sign_up_wrap.onclick = function(e) {
+  // console.log('clicked signWrap');
+  e.stopPropagation();
+}
+
+// 로그인 모달에서 회원가입 모달로 이동하는 버튼
+button_create_account.onclick = function() {
+  changeAccountMode();
+}
+
+function changeAccountMode() {
+  closeModal.call(modal_sign_in);
   openModal(modal_sign_up);
 }
 
@@ -30,7 +53,6 @@ function openModal(target) {
 function closeModal() {
   this.style.display = 'none';
 }
-
 
 btn_closed.forEach(function(item) {
   var target = item.parentNode.parentNode.parentNode.parentNode;

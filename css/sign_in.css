@@ -66,8 +66,8 @@
 /* ---------- //Header ---------- */
 /* ---------- Contents ---------- */
 .sign-in-contents {
-	height: 26.88rem;
-	margin-bottom: 1.25rem;
+	/*height: 30rem;*/
+	margin-bottom: 0.2rem;
 	margin-left: 0.63rem;
 	margin-right: 0.63rem;
 	padding: 1.88rem 1.56rem;
@@ -113,20 +113,41 @@
 	text-align: center;
 }
 /* input */
-.input-email, .input-password {
+.input-email-sign-in,
+.input-password-sign-in {
 	width: 18.75rem;
 	height: 2.81rem;
-	margin-bottom: 1rem;
+	/*margin-top: 1.5rem;*/
 	border: 1px solid #979797;
 	border-radius: 0.31rem;
 	text-indent: 1rem;
+  position: relative;
 }
-.input-password {
-	margin-bottom: 0.63rem;
+.input-email-sign-in {
+	margin-top: 1rem;
 }
+.input-password-sign-in {
+	margin-top: 1.5rem;
+}
+
+.email-sign-in-message {
+  display: none;
+  position: absolute;
+  color: #e91e63;
+  font-size: 0.63rem;
+  margin: 0;
+}
+.password-sign-in-message {
+  display: none;
+  position: absolute;
+  color: #e91e63;
+  font-size: 0.63rem;
+  margin: 0;
+}
+
 /* checkbox */
 .checkbox-wrap {
-	margin-bottom: 1rem;
+	margin: 1rem;
 	text-align: left;
 }
 #checkbox-save-email {
@@ -136,6 +157,7 @@
 .checkbox-label {
 	cursor: pointer;
 }
+
 /* sign in button */
 .button-sign-in {
 	width: 6.25rem;
@@ -146,6 +168,7 @@
 	color: #fff;
 	cursor: pointer;
 }
+
 /* //form */
 /* ---------- //Contents ---------- */
 /* ---------- Sign Up ---------- */
@@ -158,8 +181,10 @@
 }
 .button-create-account {
 	width: 9.38rem;
-	height: 1.88rem;
+  /*margin-bottom: 1rem;*/
+	/*height: 1.88rem;*/
 	border: 1px solid #979797;
+  padding: 0.3rem;
 	background: transparent;
 	border-radius: 0.19rem;
 	color: #777;

@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/sign_in.css">
 	<link rel="stylesheet" href="../css/sign_up.css">
+	<!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
 	<script type="text/javascript"  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 
@@ -30,7 +31,6 @@
 		<button type="button" class="sign-in">Log in</button>
 
 <!-- sign in modal -->
-		<div class="modal">
 		<section class="sign-in-modal">
 			<div class="sign-in-view">
 				<div class="sign-in-wrap">
@@ -62,16 +62,19 @@
 							<fieldset class="form-inner-wrap">
 								<legend class="form-title">Sign In with e-mail</legend>
 								<!-- input email -->
-								<input type="email" class="input-email" name="email" aira-label="user e-mail" placeholder="E-mail">
+
+								<input type="email" class="input-email-sign-in" name="email" aira-label="user e-mail" placeholder="E-mail">
+								<p class="email-sign-in-message">E-mail를 입력하여 주십시오.</p>
 								<!-- input password -->
-								<input type="password" class="input-password" name="password" aira-label="user password" placeholder="Password">
+								<input type="password" class="input-password-sign-in" name="password" aira-label="user password" placeholder="Password">
+								<p class="password-sign-in-message">비밀번호를 입력하여 주십시오.</p>
 								<!-- checkbox -->
 								<div class="checkbox-wrap">
 									<input type="checkbox" id="checkbox-save-email">
 									<label for="checkbox-save-email" class="checkbox-label">Remember me</label>
 								</div>
 								<!-- submit button -->
-								<button type="submit" class="button-sign-in">Sign In</button>
+								<button type="button" class="button-sign-in">Sign In</button>
 							</fieldset>
 						</form>
 					</div>
@@ -107,25 +110,28 @@
 							<fieldset class="form-inner-wrap">
 								<legend class="form-title">Sign Up with e-mail</legend>
 								<!-- input email -->
-								<input type="email" class="input-email" name="email" aira-label="user e-mail" placeholder="E-mail">
+                
+								<input type="email" class="input-email-sign-up" name="email" aira-label="user e-mail" placeholder="E-mail" value="">
+								<p class="email-sign-up-message">E-mail를 입력하여 주십시오.</p>
 								<!-- input password -->
-								<input type="password" class="input-password" name="password" aira-label="user password" placeholder="Password">
+								<input type="password" class="input-password-sign-up" name="password" aira-label="user password" placeholder="Password">
+								<p class="password-sign-up-message">비밀번호를 입력하여 주십시오.</p>
 								<!-- input confirm password -->
 								<input type="password" class="input-confirm-password" name="confirmpassword" aira-label="confirm password" placeholder="Confirm Password">
+								<p class="confirm-sign-up-message">비밀번호를 확인하여 주십시오.</p>
 								<!-- checkbox -->
-								<div class="checkbox-wrap">
+								<!-- <div class="checkbox-wrap">
 									<input type="checkbox" id="checkbox-email">
 									<label for="checkbox-save-email" class="checkbox-label">Remember me</label>
-								</div>
+								</div> -->
 								<!-- submit button -->
-								<button type="submit" class="button-sign-up">Sign Up</button>
+								<button type="button" class="button-sign-up">Sign Up</button>
 							</fieldset>
 						</form>
 					</div>
 				</div>
 			</div>
 		</section>
-		</div>
 
 	</header>
 <!-- VIDEO -->
@@ -395,5 +401,6 @@
 
 	<script src="../js/main-animation.js"></script>
 	<script src="../js/main-page.js"></script>
+	<script src="../js/sign.js"></script>
 </body>
 </html>
