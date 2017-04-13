@@ -148,6 +148,11 @@ fieldset {
   margin: auto;
 }
 
+
+.video-main {
+	width: 100%;
+	height: 100%;
+}
 /* 반응형 */
  /*.video-main video {
   position: relative;
@@ -195,6 +200,12 @@ fieldset {
   margin: 0 10px 10px 0;
 	position: relative;
 }
+
+.header-app-store:hover, .header-google-play:hover,
+.info-app-store:hover, .info-google-play:hover {
+	opacity: 0.6;
+}
+
 
 /*.header-app-store img, .header-google-play img {
   height: 30px;
