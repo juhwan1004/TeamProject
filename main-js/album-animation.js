@@ -1,4 +1,9 @@
-	var contents = document.querySelectorAll('.contents-wrap');
+// album animation script
+
+	// variables
+	var contents;
+	// get ref.
+	contents = document.querySelectorAll('.contents-wrap');
 
 	for( var i in contents) {
 		contents[i].addEventListener('mouseover', function() {
@@ -12,6 +17,3 @@
 			image.setAttribute('style','transform: scale(1); transition: all 0.5s ease-in-out;');
 		});
 	}
-
-
-var header = document.querySelector('.header');

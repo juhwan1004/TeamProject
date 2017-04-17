@@ -3,28 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Map Page</title>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJcQ9syW9sAQLKFzaP8wSBlsQ9m7Auv1A&callback=initMap"></script>
-	<link rel="stylesheet" type="text/css" href="css/map.css">
+	<link href="css/map.css" type="text/css" rel="stylesheet">
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script> -->
 </head>
 <body>
 	<!-- HEADER -->
 	<header class="header">
 		<!-- Logo -->
-		<h1 class="header-logo">
-			<a href="#"><img src="images/logo-1.png" alt="Record"></a>
-		</h1>
-		<!-- Display ID -->
-		<p class="header-display-id">사진과 위치를 함께 기록하는 여행다이어리</p>
-		<!-- Search Bar -->
-		<form class="header-search">
-			<!-- Search input -->
-			<input id="header-search-input" placeholder="Search" aria-label="앨범 검색">
-			<button type="submit" class="header-search-button">검색</button>
-		</form>
-		<!-- Sign In -->
-		<button class="sign-in">Log in</button>
-		<!-- Sign Up -->
-		<button class="sign-up">Create an account</button>
+	<div class="progress"></div>
+	<h1 class="header-logo">
+		<a href="#"><img src="images/logo-white.svg" alt="Record"></a>
+	</h1>
+	<p class="header-display-id">사진과 위치를 함께 기록하는 여행다이어리</p>
 	</header>
 	<div class="wrapper">
 		<!-- DIARY -->
@@ -33,21 +23,10 @@
 			<!-- Diary Panel -->
 			<section class="diary-panel">
 				<h3 class="diary-panel-heading readable-hidden">diary Panel</h3>
-				<div class="diary-panel-inner-wrap">
-					<!-- User Info -->
-					<div class="diary-user">User E-mail Here !</div>
-					<div class="diary-panel-button-wrap">
-						<!-- Share Button -->
-						<button class="diary-panel-button-share">Share</button>
-						<!-- Follow Button -->
-						<button class="diary-panel-button-follow">Follow</button>
-					</div>
-				</div>
 				<!-- Scroll Man -->
-				<div class="scroll-man-wrapper">
-					<div class="scroll-man-line"></div>
-					<div class="scroll-man"></div>
-				</div>			
+				<div class="scroll-man">
+					<div id="frame"></div>
+				</div>
 			</section>
 			<!-- Diary Contents -->
 			<section class="diary-contents">
@@ -56,17 +35,38 @@
 				<div class="diary-contents-header">
 					<!-- Diary Contents Cover -->
 					<div class="diary-contents-wrap">
-						<div class="diary-contents-local-name">Local Name</div>
-						<div class="diary-contents-date">Date</div>
+						<figure class="diary-user-info">
+							<figcaption class="diary-user-nick">JuHwan Shin</figcaption>
+							<img class="diary-user-img" src="images/my-marker-icon.png">
+						</figure>
 					</div>
 					<!-- Album Statistics -->
 					<div class="diary-contents-statistics-wrap">
-						Statistics
+						<div class="statistics">
+							<div class="statistics-kilo-value">0</div>
+							<p class="statistics-text">kilometers</p>
+						</div>
+						<div class="statistics">
+							<div class="statistics-likes-value">0</div>
+							<p class="statistics-text">likes</p>
+						</div>
+						<div class="statistics">
+							<div class="statistics-views-value">0</div>
+							<p class="statistics-text">views</p>
+						</div>
+						<div class="statistics">
+							<div class="statistics-day-value">0</div>
+							<p class="statistics-text">day</p>
+						</div>
+						<div class="statistics">
+							<div class="statistics-photos-value">0</div>
+							<p class="statistics-text">photos</p>
+						</div>
 					</div>
 				</div>
-				<!-- Daily Record -->
-				<div class="diary-record">
-					Record
+			<!-- Add Diary -->
+				<div class="in-diary-wrapper">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nostrum rerum possimus iure eaque ducimus sunt vel sequi maiores veniam. Distinctio aliquid laudantium ex, molestias, doloremque deleniti consectetur obcaecati molestiae, reprehenderit aut facere. Quisquam error quia laudantium odio quos quibusdam doloribus, reprehenderit. Sequi ea, explicabo magni modi similique quis iure doloribus hic repellat quisquam expedita quia, facere et totam possimus asperiores neque ullam fugit assumenda commodi exercitationem. Repellat vitae est labore laborum delectus suscipit animi veritatis quisquam harum quibusdam voluptatum, doloribus mollitia tempora, debitis possimus. Perspiciatis, dolore, sunt, commodi ea iure soluta, repellendus repellat quae fuga delectus ad impedit architecto dolorem esse. Aspernatur accusantium quibusdam, nisi sed qui facere dolore rem, ratione sit assumenda. Beatae impedit voluptas necessitatibus culpa doloribus nemo incidunt nisi, illum sunt nesciunt accusamus doloremque consequuntur dolorem quo a officiis ipsam possimus dolore natus numquam. Nulla repellat, atque dolorum recusandae fugit cumque rerum laborum nostrum totam ipsam impedit numquam, placeat et aperiam non! Debitis, possimus? Repudiandae, quis earum quos dolore doloribus possimus voluptas magni fugiat aut inventore vitae alias nulla quibusdam veniam aliquid fugit mollitia accusamus. Dicta deserunt nihil ex accusamus adipisci nobis placeat quas quia dolorem deleniti eos, veniam mollitia molestias, totam labore odio autem illum esse, vero quaerat libero, vitae? Aperiam debitis eligendi pariatur odit unde blanditiis tempora? Optio molestiae hic laudantium sapiente, voluptate corporis nulla a placeat sequi eaque itaque quos, voluptates soluta architecto. Doloremque vel accusamus beatae vitae voluptate tempora, sit placeat totam perferendis odit at inventore dolorum id rem possimus asperiores accusantium quae, repellendus necessitatibus voluptatibus voluptatem maiores nemo, ullam iure. Aperiam ratione, assumenda pariatur laborum quisquam totam doloribus at, reiciendis quidem sunt incidunt corporis ex magnam facilis? Quos quia cupiditate, harum expedita praesentium ut ipsam laborum aliquam illo, velit cumque vero accusamus similique molestias debitis, tenetur, ratione molestiae accusantium! Sunt alias, placeat sapiente excepturi omnis ipsum magnam adipisci, laudantium optio sed, saepe distinctio autem dolore magni tempora voluptatum mollitia consectetur modi dolorum voluptas assumenda qui repellendus! Quo id neque velit ullam ab vero, accusamus quas ipsum dolore quasi repellat error expedita magnam rem laudantium praesentium, inventore nisi quam itaque aliquam animi cum repudiandae fugit unde? Voluptatum, quibusdam corporis magnam nostrum animi sed velit! Neque molestiae sequi ullam nihil? Esse deleniti, inventore id dolor quisquam iste cum pariatur velit provident! Ut recusandae voluptatem saepe animi eum harum ad possimus, quas dolor quis dolores mollitia laborum, facere libero accusantium accusamus illum sapiente excepturi cupiditate atque quam et, numquam iure, quidem. Mollitia modi iste nesciunt est, eos repellendus architecto distinctio voluptate ipsam quod doloremque in dolore iure error facere quidem laudantium magnam saepe voluptas libero, blanditiis quasi voluptatem consectetur. Cumque totam recusandae tempora, animi eveniet facilis ad deleniti natus esse vero assumenda saepe labore dolore, rem necessitatibus amet porro. Magnam quibusdam porro quas aliquam error quo ipsum doloremque incidunt debitis. Pariatur expedita officia sapiente, cumque unde modi ducimus, tenetur suscipit harum. Animi porro obcaecati rem quidem, commodi asperiores voluptatibus maiores quas quae quaerat itaque debitis sapiente neque dolores sed, voluptates, delectus blanditiis consequuntur quo odio ducimus! Aut quasi vitae eius, cupiditate velit possimus facilis accusamus tempora adipisci minima ullam, at nesciunt nulla ex a quos ducimus libero impedit ipsa laboriosam, ipsam nam laudantium. Iusto ut iure impedit libero voluptatem, dolor qui dolorem, totam atque deserunt velit debitis tempora rerum maiores earum sequi numquam obcaecati porro enim eligendi expedita. Quaerat est veniam tempore quas delectus molestiae illo excepturi pariatur fugit incidunt quis non consectetur, culpa soluta modi autem dolorem saepe quae error aperiam beatae facere esse vero. Alias vitae corporis, at. Exercitationem magnam, facere. Ratione totam architecto, cupiditate deleniti! Dolor nam, praesentium expedita tempore minima illum, soluta labore possimus veritatis autem ut obcaecati quas. Dignissimos similique recusandae enim vitae perferendis quis repellendus doloremque aliquam, impedit unde neque tempore commodi possimus, quasi pariatur ullam nobis repellat illo doloribus, fugit fuga veniam quia qui earum! Veniam qui ducimus ad deserunt quia, harum, vero, numquam voluptatum impedit nobis eveniet, dolorum dicta possimus consequatur! Commodi accusantium odio nesciunt numquam, laudantium quos voluptate laboriosam inventore culpa rem quaerat praesentium ex veritatis, reprehenderit, saepe mollitia nam, placeat unde! Officia atque iste hic omnis tempora illo ex numquam quaerat, architecto, suscipit ullam tempore sit, rerum neque reiciendis! Sit voluptatibus et, molestiae, earum nam voluptas tempora velit accusamus maiores quaerat corporis dolorum minima beatae harum modi quod provident deserunt voluptatem architecto laudantium iure necessitatibus dolor nihil corrupti! Quam temporibus nostrum debitis culpa nobis repellendus reprehenderit, saepe odit eius. Sunt laudantium officiis omnis enim exercitationem magni autem? Magnam deserunt assumenda, doloribus, itaque officia cumque deleniti quasi. Voluptates magni autem molestiae eum pariatur? Quae sint hic quaerat architecto debitis amet necessitatibus itaque expedita vitae consequatur, illum laudantium asperiores temporibus beatae sequi deserunt labore maxime nemo impedit nisi. Quo libero voluptatibus quisquam architecto accusamus! Ea nihil quae quasi totam ex ducimus, ipsa maiores itaque, magni vitae, omnis enim recusandae eveniet laboriosam nesciunt, sit veniam. Natus, assumenda? Magnam eligendi quod sit, earum facere voluptate vero fuga veniam, totam in enim reprehenderit nisi autem eaque unde. Omnis adipisci, quaerat voluptas aperiam, ullam placeat animi nobis molestiae porro magnam voluptates ad officia amet, quas architecto ipsa deleniti neque distinctio repellendus hic! Soluta molestias delectus velit deserunt consectetur eos, esse ea nesciunt impedit voluptatem nostrum accusamus dolore ratione eum rem eius quos at possimus odit aspernatur ducimus eaque totam numquam aut. Et dolorem officia, nemo reprehenderit ipsum assumenda nobis quas iure similique. Repellat delectus tempore deleniti odio consequuntur velit. Aperiam minima odit quibusdam, atque eligendi voluptates perspiciatis ex necessitatibus molestiae accusamus consectetur ipsa omnis iste quaerat impedit ea officiis maxime. In minima corrupti sequi ad, recusandae totam distinctio eveniet magni repudiandae nobis, saepe amet, expedita aut ullam, cum facere rerum? Rem placeat eveniet, voluptates animi deserunt maiores! Molestias optio delectus reiciendis temporibus, tempore alias magni, voluptatem ipsam, consequatur voluptatum ut laboriosam facilis cum fuga at error impedit voluptas qui voluptatibus culpa ipsa? Adipisci voluptates totam tempore doloremque aliquid earum nulla libero nostrum qui rem vel incidunt impedit vitae ipsam sit deserunt rerum corrupti exercitationem, veritatis. Non dignissimos esse rem dolor.					
 				</div>
 			</section>
 		</section>
@@ -75,8 +75,15 @@
 	</div>
 
 	<!-- Scripts -->
-	<script src="js/map_helper.js"></script>
-	<script src="js/map.js"></script>
+	<script src="map-js/helper.js"></script>
+	<script src="map-js/computed_height.js"></script>
+	<script src="map-js/scroll_man.js"></script>
+	<script src="map-js/google_map.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGvF2V1dSu1q0dbYnld1DrYSFLzIt8s_4&callback=initMap"></script>
+	<!-- <script src="../node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"></script> -->
+	<!-- <script src="map-js/app.js"></script> -->
+	<!-- <script src="data/generateImages.js"></script> -->
+	<!-- <script src="js/ajax.js"></script>	 -->
 </body>
 </html>
 

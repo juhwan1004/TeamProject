@@ -31,67 +31,36 @@ a {
 /* ---------------- //Reset Style ---------------- */
 /* ---------------- Header ---------------- */
 .header {
-  width: 75rem;
+  width: 100%;
   height: 50px;
   margin: auto;
   display: flex;
   flex-wrap: nowrap;
 	position: relative;
+	background: #1a2430;
 }
 .header-logo {
   margin: 5px 10px 5px 20px;
+  z-index: 10;
 }
 .header-logo img {
   width: 135px;
 }
 .header-display-id {
 	font-size: 0.75rem;
-	color: #979797;
+	color: #fff;
 	margin: auto 5px;
+	z-index: 10;
 }
-.header-search {
-  margin: 15px 10px 5px auto;
-  font-size: 0;
+/* header scroll coloring */
+.progress {
+	position: absolute;
+	width: 0%;
+	height: 5px;
+	top: 45px;
+	background: #2196f3;
 }
-#header-search-input {
-	vertical-align: top;
-  width: 200px;
-	height: 30px;
-	border: 0.5px dotted #c0c0c0;
-	border-radius: 5px;
-  padding-left: 10px;
-}
-.header-search-button {
-	height: 30px;
-  border-style: none;
-	background: #ffffff;
-	color: #51b1fe;
-  cursor: pointer;
-}
-.sign-in, .sign-up {
-  cursor: pointer;
-	margin: 15px 5px 5px 5px;
-	height: 30px;
-}
-.sign-in {
-  width: 100px;
-  font-size: 0.63rem;
-	background: none;
-  color: #2196F3;
-  border-radius: 5px;
-  border: 1px solid #2196F3;
-	text-align: center;
-}
-.sign-up {
-  border: none;
-  color: #ffffff;
-  border-radius: 5px;
-  text-align: center;
-  background: #2196F3;
-  display: inline-block;
-  font-size: 0.63rem;
-	padding: 0.5rem;
-}
+/* header scroll coloring */
 /* ---------------- //Header ---------------- */
 /* ---------------- Wrapper ---------------- */
 .wrapper {
@@ -109,122 +78,148 @@ a {
 }	
 /* diary panel */
 .diary-panel {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 	position: fixed;
 	width: 50%;
 	min-width: 37.5rem;
 	height: 5rem;
-}
-.diary-panel-inner-wrap {
-	height: 3.13rem;
-	padding: 0.63rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background: #9dc8c8;
-}
-.diary-panel-button-share, .diary-panel-button-follow { 
-	width: 5rem;
-	height: 2rem;
-	border: none;
-	border-radius: 0.31rem;
-	cursor: pointer;
-}
-.diary-panel-button-share {
-	background-color: #fff;
-	border: 2px solid #777;
-	color: #181818;
-}
-.diary-panel-button-share::before {
-	content: '\f1e0'; 
-	font-family: 'fontello';
-	margin-right: 5px;
-}
-.diary-panel-button-share:hover {
-	background-color: #777;
-	color: #fff;
-}
-.diary-panel-button-follow {
-	background-color: #e91e63;
-	color: #fff;
-}
-.diary-panel-button-follow::before {
-	content: '\f234'; 
-	font-family: 'fontello';
-	margin-right: 5px;
-}
-.diary-panel-button-follow:hover {
-	background-color: #fff;
-	border: 2px solid #e91e63;
-	color: #e91e63;
+	background-image: url(../images/steps-day-bg.png);
+	background-size: 100% 80px;
 }
 /* //diary panel */
 /* scroll man */
-.scroll-man-wrapper {
-	height: 1.88rem;
-	position: relative;
-	background: #47AEA2;
-}
-.scroll-man-line {
-	position: absolute;
-	left: 11px;
-	right: 12px;
-	top: 15px;
-	height: 0.06rem;
-	background: #fff;
-}
-.scroll-man-line::before, .scroll-man-line::after {
-	position: absolute;
-	content: '';
-	display: block;
-	height: 7px;
-	width: 7px;
-	margin-top: -3px;
-	border-radius: 50%;
-	border: 1px solid #fff;
-}
-.scroll-man-line::before {
-	left: -6px;
-}
-.scroll-man-line::after {
-	right: -6px;
-}
 .scroll-man {
-	position: relative;
-}
-.scroll-man::before {
 	position: absolute;
-	top: 8px;
-	width: 20px;
-	content: '\e800';
-	font-family: fontello;
-	text-align: center;
-	color: #fff;
-	background: #47AEA2;
+	left: 0%;
+	width: 50px;
+	height: 45px;
+	background-repeat: no-repeat;
+	overflow: hidden;
 }
+#frame {
+	width: 350px;
+	height: 50px;
+	background-image: url(../images/steps-sprite.png);
+	background-repeat: no-repeat;
+  animation-name: frame-animation; 
+}
+@keyframes frame-animation { 0% { background-position: 0px 0; } 100% { background-position: -350px 0; } }
 /* //scroll man */
 /* diary contents */
 .diary-contents {
 	width: 100%;
-	height: 0;
-	padding-bottom: 80vh;
 	margin-top: 5rem;
-	background: #948989;
 	overflow-y: auto;
+	background: #e7eaec;
+	text-align: center;
+	z-index: -20;
 }
 .diary-contents-header {
 	text-align: center;
-	background: #64447F;
+	background-image: url(../images/info-img-03.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .diary-contents-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 16.25rem;
-	background: #56445d;
 }
+/* diary user */
+.diary-user-nick {
+	margin: 0.63rem 0;
+	color: #fff;
+}
+.diary-user-img {
+	width: 9.38rem;
+	height: 9.38rem;
+}
+/* //diary user */
 .diary-contents-statistics-wrap {
+	display: flex;
+	width: 100%;
 	height: 6.25rem;
+	background-color: rgba(00,00,00,0.6);
 }
 /* //diary contents */
 
+/* album statistics */
+.statistics {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 20%;
+	height: 100px;
+	/*background: #64447F;*/
+	color: #fff;
+	font-weight: normal;
+}
+.statistics-text {
+	margin: 0;
+}
+[class$="-value"] {
+	font-size: 0.88rem;
+}
+.statistics::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-right: 1px solid rgba(255,255,255,0.3);
+}
+.statistics:last-child::after {
+	display: none;
+}
+.statistics-kilo-value::before,
+.statistics-likes-value::before,
+.statistics-views-value::before,
+.statistics-day-value::before,
+.statistics-photos-value::before {
+	display: block;
+	font-family: 'statistics';
+	font-size: 1.56rem;		
+	margin-bottom: 0.5rem;
+}
+.statistics-kilo-value::before   { content: '\e801'; } 
+.statistics-likes-value::before  { content: '\e800'; } 
+.statistics-views-value::before  { content: '\e802'; }
+.statistics-day-value::before    { content: '\e803'; }
+.statistics-photos-value::before { content: '\e804'; }
+
+/* //album statistics */
 /* ---------------- //Diary ---------------- */
+
+/* ---------------- In Diary ---------------- */ 
+.in_diary {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	height: 300px;
+	margin: 20px auto;
+	padding: 20px;
+	border-radius: 5px;
+	background: #fff;
+	box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+	transition: box-shadow 0.2s ease-in-out;
+}
+.in_diary:hover {
+	box-shadow: 3px 3px 3px 0px rgba(46,61,73,0.15); 
+	cursor: pointer;
+}
+.in_diary_title {
+	color: #181818;
+	font-size: 30px;
+}
+/* ---------------- //In Diary ---------------- */
+
 /* ---------------- Map ---------------- */
 #map {
 	width: 50%;
@@ -232,4 +227,3 @@ a {
 	height: inherit;
 }
 /* ---------------- //Map ---------------- */
-
