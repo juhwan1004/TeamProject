@@ -69,7 +69,6 @@ fieldset {
 	padding: 5px 50px 5px 80px;
 	height: 60px;
 	background: #fff;
-  transition: top 0.2s ease-in-out;
 	z-index: 1;
 }
 
@@ -145,7 +144,7 @@ fieldset {
   width: 100%;
 	max-width: 1920px;
 	min-width: 1200px;
-  margin: auto;
+  margin: auto ;
 }
 
 
