@@ -1,0 +1,56 @@
+
+
+
+/*
+
+
+.video, .intro, #albums, .info, .footer
+
+ */
+
+
+
+.video {
+	opacity: 0;
+	transition: all 1s ease;
+	transform: translateY(50px);
+}
+
+.video.fade-in {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+
+.intro {
+	opacity: 0;
+	transition: all 0.5s ease;
+	transform: translateY(50px);
+}
+
+.intro.fade-in {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+#albums {
+	opacity: 0;
+	transition: all 0.5s ease;
+	transform: translateY(50px);
+}
+
+#albums.fade-in {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.info {
+	opacity: 0;
+	transition: all 0.5s ease;
+	transform: translateY(50px);
+}
+
+.info.fade-in {
+	opacity: 1;
+	transform: translateY(0);
+}

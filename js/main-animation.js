@@ -32,3 +32,32 @@
 	// }
 
 var header = document.querySelector('.header');
+
+
+// header ScrollMagic opacity
+(function(global){
+	'use strict';
+
+	var ctrl = new ScrollMagic.Controller();
+
+	// 핀제어
+	var carousel_pin = new ScrollMagic.Scene({
+		'triggerElement': '.video',
+		'triggerHook': 0,
+	});
+
+
+	var scene_list = '.video, .intro, #albums, .info'.split(', ');
+
+	scene_list.forEach(function(trigger_el_selector, idx) {
+		var scene = new ScrollMagic.Scene({
+			'triggerElement': trigger_el_selector,
+			'triggerHook': 0,
+			'offset': -700,
+		})
+		.setClassToggle(trigger_el_selector, 'fade-in')
+		.addIndicators()
+		.addTo(ctrl);
+	});
+
+})(this, this.ScrollMagic);
