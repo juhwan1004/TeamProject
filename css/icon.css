@@ -1,0 +1,68 @@
+.control {
+  /*테두리*/
+  border: 0.1rem solid rgba(255,255,255,0.5);
+  border-radius: 50%;
+  /*margin: 1rem;*/
+  padding: 1rem;
+  width: 5rem;
+  height: 5rem;
+  font-size: 0;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: 25rem;
+  left: 77rem;
+  /*z-index: 999;*/
+}
+.control,
+.control .left,
+.control .right,
+.control:before {
+  display: inline-block;
+  vertical-align: middle;
+  transition: all 0.2s ease-in-out;
+}
+.control:before {
+  content: "";
+  height: 3rem;
+}
+.control.pause .left,
+.control.pause .right {
+  margin: 0;
+  border-left: 0.5rem solid rgba(255,255,255,0.5);
+  border-top: 0 solid transparent;
+  border-bottom: 0 solid transparent;
+  height: 2.5rem;
+}
+/* pause 간격 */
+.control.pause .left {
+  border-right: 1rem solid transparent;
+}
+
+/* play */
+.control.play .left {
+  margin-left: 0.3rem;
+  left: 5em;
+  border-left: 1rem solid rgba(255,255,255,0.5);
+  border-top: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent;
+  border-right: 0px solid transparent;
+  height: 3rem;
+}
+.control.play .right {
+  margin: 0;
+  border-left: 2rem solid rgba(255,255,255,0.5);
+  border-top: 1rem solid transparent;
+  border-bottom: 1rem solid transparent;
+  height: 0rem;
+}
+/*.control:hover {
+  border-color: #fff;
+}
+.control:hover .left,
+.control:hover .right {
+  border-left-color: #fff;
+}*/
+
+/* #E91E63 */

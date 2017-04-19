@@ -16,11 +16,16 @@ body, h1, h2, h3, figure {
 }
 
 body {
-	padding-top: 60px;
+	/*padding-top: 60px;*/
 }
 
 a {
 	text-decoration: none;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
 }
 /* ---------------- //Reset Style ---------------- */
 
@@ -64,15 +69,16 @@ a {
 	padding: 5px 50px 5px 80px;
 	height: 60px;
 	background: #fff;
-  transition: top 0.2s ease-in-out;
 	z-index: 1;
+	transition: all 0.2s ease-in-out;
 }
 
 .header-logo {
-  margin: 0px 10px 5px 20px;
+  margin: 0px 10px 5px 32px;
 }
 
 .header-logo img {
+	margin-top: 10px;
   width: 135px;
 }
 
@@ -129,7 +135,7 @@ a {
   display: inline-block;
   font-size: 0.63rem;
 	padding: 0.5rem;
-	margin-right: 20px;
+	margin-right: 62px;
 }
 
 /* ---------------- //Header ---------------- */
@@ -140,9 +146,14 @@ a {
   width: 100%;
 	max-width: 1920px;
 	min-width: 1200px;
-  margin: auto;
+  margin: auto ;
 }
 
+
+.video-main {
+	width: 100%;
+	height: 100%;
+}
 /* 반응형 */
  /*.video-main video {
   position: relative;
@@ -160,13 +171,14 @@ a {
   font-size: 4.38rem;
   color: #ffffff;
   top: 200px;
-  left: 150px;
+  left: 106px;
   margin: 0;
   line-height: 1;
 }
 
 .video-title {
-  margin: 0;
+	padding: 0;
+	display: inline-block;
 }
 
 .video-desc {
@@ -179,25 +191,25 @@ a {
 .header-app-download {
   position: absolute;
   top: 600px;
-  left: 150px;
+  left: 106px;
 }
 
 .header-app-store, .header-google-play {
   border: none;
   border-radius: 5px;
-	padding: 10px;
   background: #E91E63;
   cursor: pointer;
   margin: 0 10px 10px 0;
-  white-space: nowrap;
-	color: #ffffff;
-	font-size: 0.4rem;
-	text-align: left;
 	position: relative;
-	width: 150px;
 }
 
-.header-app-store img, .header-google-play img {
+.header-app-store:hover, .header-google-play:hover,
+.info-app-store:hover, .info-google-play:hover {
+	opacity: 0.6;
+}
+
+
+/*.header-app-store img, .header-google-play img {
   height: 30px;
   margin: 0 5px 0 5px;
 	vertical-align: top;
@@ -215,14 +227,14 @@ a {
 	top: 23px;
 	left: 53px;
 	font-size: 0.88rem;
-}
+}*/
 
 /* ---------------- //Video ---------------- */
 
 /* ---------------- Intro ---------------- */
 
 .intro {
-  width: 500px;
+  width: 31.25rem;
   margin: 5rem auto;
   text-align: center;
 }
@@ -344,7 +356,7 @@ a {
 }
 
 .album-local-name {
-	margin: 0;
+	margin: 15px 0 0 0;
 	color: rgb(41, 235, 206);
 }
 
@@ -420,27 +432,20 @@ a {
 
 /* app 다운로드 버튼 */
 .info-app-download {
-  position: absolute;
-  top: 12rem;
-  left: 28.13rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .info-app-store, .info-google-play {
   border: none;
   border-radius: 5px;
-	padding: 10px;
   background: #E91E63;
   cursor: pointer;
-  margin: 0 10px 10px 0;
-  white-space: nowrap;
-	color: #ffffff;
-	font-size: 0.4rem;
-	text-align: left;
-	position: relative;
-	width: 150px;
+  margin: 0 10px 0px 10px;
 }
 
-.info-app-store img, .info-google-play img {
+/*.info-app-store img, .info-google-play img {
   height: 30px;
   margin: 0 5px 0 5px;
 	vertical-align: top;
@@ -458,7 +463,7 @@ a {
 	top: 23px;
 	left: 53px;
 	font-size: 0.88rem;
-}
+}*/
 
 /* ---------------- //Info ---------------- */
 

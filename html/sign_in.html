@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign In Modal</title>
+	<link rel="stylesheet" type="text/css" href="../css/sign_in.css">
+</head>
+<body>
+	<button class="button-modal">Sign In</button>
+	<div class="sign-in-wrap">
+	<!-- Header -->
+		<div class="sign-in-header">
+			<p class="sign-in-title">Sign in to Record</p>
+			<button class="button-closed">x</button>
+		</div>
+	<!-- Contents -->
+		<div class="sign-in-contents">
+			<!-- SNS Sign In -->
+			<div class="sns-sign-in">
+				<!-- facebook -->
+				<button type="button" class="button-sign-in-facebook">
+					<span class="readable-hidden">facebook</span>
+				</button>
+				<!-- google -->
+				<button type="button" class="button-sign-in-google">
+					<span class="readable-hidden">google</span>
+				</button>
+				<p class="sns-promise">We promise never to share anything without your permission</p>
+			</div>
+			<!-- e-mail Sign In -->
+			<form action="" id="email-sign-in">
+				<fieldset class="form-inner-wrap">
+					<legend class="form-title">Sign In with e-mail</legend>
+					<!-- input email -->
+					<input type="email" class="input-email" name="email" aira-label="user e-mail" placeholder="E-mail">
+					<!-- input password -->
+					<input type="password" class="input-password" name="password" aira-label="user password" placeholder="Password">
+					<!-- checkbox -->
+					<div class="checkbox-wrap">
+						<input type="checkbox" id="checkbox-save-email">
+						<label for="checkbox-save-email" class="checkbox-label">Remember me</label>
+					</div>
+					<!-- submit button -->
+					<button type="submit" class="button-sign-in">Sign In</button>
+				</fieldset>
+			</form>
+		</div>
+	<!-- Create an Account -->
+		<div class="create-account-wrap">
+			<p class="create-account-title">New to Record</p>
+			<button class="button-create-account">Create an account</button>
+		</div>
+	</div>
+	<scirpt src="js/sign_in.js"></scirpt>
+</body>
+</html>
