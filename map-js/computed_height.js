@@ -10,7 +10,7 @@
 			panel_height,
 			extra_height;
 	
-	// get ref.
+	// get reference
 	diary_contents = document.querySelector('.diary-contents');
 	map = document.querySelector('#map');
 	// 요소의 Height 값 가져오기

@@ -45,12 +45,17 @@ var helper = (function(global){
 	 * @param {HTMLElement} el [중앙에 위치하고자 하는 요소의 참조]
 	 */
 	function setModalCenter(el) {
+		// variables
+		var el_height,
+				el_width,
+				align_height_center,
+				align_width_center;
 		// 인자로 받아온 element의 높이를 가져온 후
-		var el_height = parseInt(getStyle(el,"height"));
-		var el_width  = parseInt(getStyle(el,"width"));
+		el_height = parseInt(getStyle(el,"height"));
+		el_width  = parseInt(getStyle(el,"width"));
 	
-		var align_height_center = (innerHeight/2) - (el_height/2);
-		var align_width_center = (innerWidth/2) - (el_width/2);
+		align_height_center = (innerHeight/2) - (el_height/2);
+		align_width_center = (innerWidth/2) - (el_width/2);
 		
 		el.setAttribute('style','top:'+align_height_center+'px; left:'+align_width_center+'px; display: block;');
 	}
@@ -60,32 +65,29 @@ var helper = (function(global){
 	 * @param  {String} title [인다이어리 이름]
 	 * @param  {String} date  [날짜]
 	 */
-	function createInDiary(title, start_date) {
-		// create in_diary 
-		var in_diary,
-				in_diary_title,
-				in_diary_wrapper,
-				date;
+	function createInDiary(num) {
+		// variables 
+		var	in_diary_wrapper,
+				in_diary;
 		// create elements
 		in_diary_wrapper = document.querySelector('.in-diary-wrapper');
-		in_diary = document.createElement('div');
-		in_diary_title = document.createElement('h1');
-		date = document.createElement('p');
+		in_diary = document.createElement('img');
 		// set Attributes
-		in_diary_title.setAttribute('class','in_diary_title');
-		in_diary.setAttribute('class', 'in_diary');
-		// set text
-		in_diary_title.textContent = title;
-		date.textContent = "Date: " + start_date;
+		// console.log('src:',shared_data.pins[num].src);
+		// console.log('id:',in_diary);
+		in_diary.setAttribute('src', shared_data.pins[num].src);
+		for (var i=1; i<=num+1; i++) {
+			in_diary.setAttribute('class', 'photo-'+i);
+			// in_diary.textContent = num;
+		}
 		// append elements
-		in_diary.appendChild(in_diary_title);
-		in_diary.appendChild(date);
-		in_diary_wrapper.appendChild(in_diary); 
+		in_diary_wrapper.appendChild(in_diary);
 	}	
 	// [Public]: 전역에서 사용할 수 있도록 공개
 	return {
 		'checkDisplayHeight': checkDisplayHeight,
 		'getStyle': getStyle,
-		'getScrollPos': getScrollPos
+		'getScrollPos': getScrollPos,
+		'createInDiary': createInDiary
 	}
 }(window));

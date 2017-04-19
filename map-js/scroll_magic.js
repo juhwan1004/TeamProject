@@ -1,19 +1,53 @@
 // scrollmagic 관련 scirpt 파일
-// (function(global){
-	// 'use strict';
+(function(){
+	'use strict';
 	// variables
 	var controller,
+			photos,
+			photo,
+			class_name,
+			data_index,
+			info,
+			prev_info,
 			scene;
-
+	// get reference
 	controller = new ScrollMagic.Controller();
-	// 해당 offset에서 얼만큼의 duration동안 어떻게 보여줄지 결정하는 scene
-	scene = new ScrollMagic.Scene({
-		triggerElement: '', // starting scene, when reaching this element
-		offset:,
-		duration: 400 // pin the element for a total of 400px
+	photos  = document.querySelectorAll('[class^="photo-"]'); 
 
-		// Add Scene to ScrollMagic Controller
-		controller.addScene(scene);
-	});
+	for ( var i=0; i<photos.length; i++ ) {
+		photo = photos[i];
 
-// }(window));
+		scene = new ScrollMagic.Scene({
+			'triggerElement': photo,
+			'triggerHook': 0.6,
+			'duration': 420
+		})
+			.on('start', function() {
+				// panTo()
+				class_name = document.querySelector('.card').classList.value;
+				data_index = class_name.replace(/[a-z,-]/gi,"");
+
+				map.panTo({'lat': spots[parseInt(data_index,10)-1].lat, 'lng': spots[parseInt(data_index,10)-1].lng});
+				map.setZoom(15);
+				// Info Window
+				info = new google.maps.InfoWindow({
+				  content: spots[parseInt(data_index,10)-1].title
+				});
+				// Remove prev info window
+				if ( prev_info ) {
+					prev_info.close();
+				}
+				prev_info = info;
+    		info.open(map, markers[parseInt(data_index,10)-1]);
+			})
+			.addTo(controller)
+			// .addIndicators({
+			// 	'name': 'PanTo',
+			// 	'indent': 700,
+			// 	'colorTrigger': '#fe4940',
+			// 	'colorStart': '#34c0ff',
+			// 	'colorEnd': '#7eff28'
+			// })
+			.setClassToggle(photo, 'card');
+	}
+}());

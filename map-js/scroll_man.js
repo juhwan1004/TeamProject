@@ -1,6 +1,7 @@
 // diary contents의 scroll man script
 (function(global, $helper){
 	'use strict';
+	// variables
 	var document,
 			diary_panel,
 			diary_contents,
@@ -8,6 +9,7 @@
 		  frame,
 			scroll,
 			progress;
+	// get reference
 	document = global.document;
 	diary_panel = document.querySelector('.diary-panel');
 	diary_contents = document.querySelector('.diary-contents');

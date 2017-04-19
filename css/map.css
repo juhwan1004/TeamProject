@@ -155,7 +155,6 @@ a {
 	align-items: center;
 	width: 20%;
 	height: 100px;
-	/*background: #64447F;*/
 	color: #fff;
 	font-weight: normal;
 }
@@ -195,30 +194,32 @@ a {
 /* //album statistics */
 /* ---------------- //Diary ---------------- */
 
-/* ---------------- In Diary ---------------- */ 
-.in_diary {
+/* ---------------- Photo ---------------- */ 
+[class^="photo-"] {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	width: 90%;
+	width: 80%;
 	height: 300px;
 	margin: 20px auto;
-	padding: 20px;
-	border-radius: 5px;
+	padding: 15px;
 	background: #fff;
 	box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
-	transition: box-shadow 0.2s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
-.in_diary:hover {
+[class^="photo-"]:hover {
 	box-shadow: 3px 3px 3px 0px rgba(46,61,73,0.15); 
 	cursor: pointer;
 }
-.in_diary_title {
-	color: #181818;
-	font-size: 30px;
+.card {
+	width: 100%;
+	height: 400px;
+	padding: 0;
+	font-size: 5rem;
+	background: transparent;
 }
-/* ---------------- //In Diary ---------------- */
+/* ---------------- //Photo ---------------- */
 
 /* ---------------- Map ---------------- */
 #map {
