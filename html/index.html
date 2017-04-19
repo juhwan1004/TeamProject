@@ -3,12 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Record</title>
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="../css/normalize.css">
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/sign_in.css">
 	<link rel="stylesheet" href="../css/sign_up.css">
 	<link rel="stylesheet" href="../css/parallax.css">
-	<!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
-	<script type="text/javascript"  src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="../css/icon.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js">
+	</script>
+  
 </head>
 
 <body>
@@ -31,7 +35,13 @@
 		<!-- Sign In -->
 		<button type="button" class="sign-in">Log in</button>
 
+		<!-- Sign Up -->
+		<button type="button" class="sign-up">Create an account</button>
+
+	</header>
+
 <!-- sign in modal -->
+	<div class="modal">
 		<section class="sign-in-modal">
 			<div class="sign-in-view">
 				<div class="sign-in-wrap">
@@ -88,9 +98,6 @@
 			</div>
 		</section>
 
-		<!-- Sign Up -->
-		<button type="button" class="sign-up">Create an account</button>
-
 		<!-- sing up modal -->
 		<section class="sign-up-modal">
 			<div class="sign-up-view">
@@ -133,12 +140,17 @@
 				</div>
 			</div>
 		</section>
+	</div>
 
-	</header>
 <!-- VIDEO -->
 	<section class="video">
 		<!-- Video Heading	-->
 		<h2 class="video-heading readable-hidden">Video Heading</h2>
+		<!-- video icon -->
+			<div class="control play">
+  			<span class="left"></span>
+				<span class="right"></span>
+			</div>
 		<!-- Background Video -->
 		<video class="video-main" autoplay loop src="../video/main-video.mp4"
  		type="video/mp4" poster="../images/main-image.png">
