@@ -9,8 +9,17 @@
  */
 
 
+/*.header {
+  opacity: 1;
+	transition: all 0.5s ease;
+}
 
-.video {
+.header.trans {
+  opacity: 0.5;
+	transition: all 0.5s ease;
+}*/
+
+/*.video {
 	opacity: 0;
 	transition: all 1s ease;
 	transform: translateY(50px);
@@ -19,7 +28,7 @@
 .video.fade-in {
 	opacity: 1;
 	transform: translateY(0);
-}
+}*/
 
 
 .intro {
@@ -40,17 +49,6 @@
 }
 
 #albums.fade-in {
-	opacity: 1;
-	transform: translateY(0);
-}
-
-.info {
-	opacity: 0;
-	transition: all 0.5s ease;
-	transform: translateY(50px);
-}
-
-.info.fade-in {
 	opacity: 1;
 	transform: translateY(0);
 }

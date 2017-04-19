@@ -70,13 +70,15 @@ fieldset {
 	height: 60px;
 	background: #fff;
 	z-index: 1;
+	transition: all 0.2s ease-in-out;
 }
 
 .header-logo {
-  margin: 0px 10px 5px 20px;
+  margin: 0px 10px 5px 32px;
 }
 
 .header-logo img {
+	margin-top: 10px;
   width: 135px;
 }
 
@@ -133,7 +135,7 @@ fieldset {
   display: inline-block;
   font-size: 0.63rem;
 	padding: 0.5rem;
-	margin-right: 20px;
+	margin-right: 62px;
 }
 
 /* ---------------- //Header ---------------- */
@@ -169,13 +171,14 @@ fieldset {
   font-size: 4.38rem;
   color: #ffffff;
   top: 200px;
-  left: 150px;
+  left: 106px;
   margin: 0;
   line-height: 1;
 }
 
 .video-title {
-  margin: 0;
+	padding: 0;
+	display: inline-block;
 }
 
 .video-desc {
@@ -188,7 +191,7 @@ fieldset {
 .header-app-download {
   position: absolute;
   top: 600px;
-  left: 150px;
+  left: 106px;
 }
 
 .header-app-store, .header-google-play {
@@ -353,7 +356,7 @@ fieldset {
 }
 
 .album-local-name {
-	margin: 0;
+	margin: 15px 0 0 0;
 	color: rgb(41, 235, 206);
 }
 

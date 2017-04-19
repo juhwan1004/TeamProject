@@ -113,7 +113,9 @@ btn_closed.forEach(function(item) {
 // video control
 
 var video_main = document.querySelector(".video-main");
+var video_control = document.querySelector(".control");
 // console.log('video_main:',video_main);
+// console.log(video_control);
 
 // video_main.onclick = function() {
 //   play(video_main);
@@ -131,8 +133,11 @@ var video_main = document.querySelector(".video-main");
 // }
 
 video_main.addEventListener('click', playControl);
+// video_control.addEventListener('click', toggleClass);
 
 document.addEventListener('keyup', stopVideo);
+
+
 
 function stopVideo(e) {
   if(e.keyCode === 27) {
@@ -148,3 +153,18 @@ function playControl() {
   //     video_main.play();
   // }
 }
+
+////////////
+// jQuery //
+////////////
+
+// video icon
+$('.video-main').on('click', function() {
+  $('.control').toggleClass('pause play');
+});
+
+// $(document).on('keyup', function(e) {
+//   if (e.which == 32) {
+//     $('.control').toggleClass('pause play');
+//   }
+// });

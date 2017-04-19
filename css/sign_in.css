@@ -176,7 +176,7 @@
 	text-align: center;
 }
 .create-account-title {
-	margin: 0;
+	margin: 15px 0 10px 0;
 	color: #777;
 }
 .button-create-account {
@@ -184,7 +184,7 @@
   /*margin-bottom: 1rem;*/
 	/*height: 1.88rem;*/
 	border: 1px solid #979797;
-  padding: 0.3rem;
+  padding: 0.5rem;
 	background: transparent;
 	border-radius: 0.19rem;
 	color: #777;
