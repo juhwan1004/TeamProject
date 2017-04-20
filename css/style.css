@@ -398,16 +398,25 @@ fieldset {
 /* ---------------- //Albums ---------------- */
 
 /* ---------------- Info ---------------- */
+/*.info-item {
+	display: flex;
+	margin-top: -115px;
+}*/
+
 .info {
 	position: relative;
 	padding-top: 6.25rem;
+	background-image: url(../images/info-img-03.png);
+	background-image: url(../images/info-img-02.png);
 	background-image: url(../images/info-img.png);
 	background-size: cover;
 	text-align: center;
 	color: #fff;
 	/* 사진 삽입 전 임시 높이 */
 	height: 20rem;
+	overflow: hidden;
 }
+
 
 .info-bg-color {
 	position: absolute;
@@ -443,6 +452,52 @@ fieldset {
   background: #E91E63;
   cursor: pointer;
   margin: 0 10px 0px 10px;
+}
+
+/* carousel */
+.carousel {
+	display: flex;
+	justify-content: center;
+	margin: 70px 0 0 0;
+}
+
+.carousel-1, .carousel-2, .carousel-3 {
+	height: 10px;
+	width: 10px;
+	margin: 0 2px 0 2px;
+}
+
+.carousel-1 {
+	color : rgb(81, 177, 254);
+}
+
+
+/* icon-btn */
+.icon-btn-left, .icon-btn-right{
+	background: none;
+	border: none;
+	position: absolute;
+	top: 9rem;
+	color: rgba(81, 177, 254, 0.8);
+	font-size: 3rem;
+}
+
+.icon-btn-left {
+	left: 1rem;
+}
+
+.icon-btn-right {
+	right: 1rem;
+}
+
+.icon-btn-left:before, .icon-btn-right:before {
+	content: '\f104';
+	font-family: 'fontello-btn';
+}
+
+.icon-btn-right:before {
+	content: '\f105';
+	font-family: 'fontello-btn';
 }
 
 /*.info-app-store img, .info-google-play img {
