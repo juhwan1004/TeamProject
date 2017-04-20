@@ -1,7 +1,7 @@
 .control {
   /*테두리*/
-  border: 0.1rem solid rgba(255,255,255,0.5);
-  border-radius: 50%;
+  /*border: 0.1rem solid rgba(0,0,0,0.9);
+  border-radius: 50%;*/
   /*margin: 1rem;*/
   padding: 1rem;
   width: 5rem;
@@ -27,10 +27,12 @@
   content: "";
   height: 3rem;
 }
+
+/* pause */
 .control.pause .left,
 .control.pause .right {
   margin: 0;
-  border-left: 0.5rem solid rgba(255,255,255,0.5);
+  border-left: 0.5rem solid rgba(255,255,255,0.9);
   border-top: 0 solid transparent;
   border-bottom: 0 solid transparent;
   height: 2.5rem;
@@ -44,7 +46,7 @@
 .control.play .left {
   margin-left: 0.3rem;
   left: 5em;
-  border-left: 1rem solid rgba(255,255,255,0.5);
+  border-left: 1rem solid rgba(255,255,255,0.9);
   border-top: 0.5rem solid transparent;
   border-bottom: 0.5rem solid transparent;
   border-right: 0px solid transparent;
@@ -52,7 +54,7 @@
 }
 .control.play .right {
   margin: 0;
-  border-left: 2rem solid rgba(255,255,255,0.5);
+  border-left: 2rem solid rgba(255,255,255,0.9);
   border-top: 1rem solid transparent;
   border-bottom: 1rem solid transparent;
   height: 0rem;
@@ -65,4 +67,6 @@
   border-left-color: #fff;
 }*/
 
-/* #E91E63 */
+/* rgba(233,30,99,0.6) */
+/* rgba(81,117,254,1) */
+/* rgba(0,0,0,0.9) */
