@@ -60,9 +60,6 @@ btn_closed.forEach(function(item) {
 });
 
 
-
-
-
 // jQuery
 //
 // (function(global, $) {
