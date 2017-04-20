@@ -9,10 +9,13 @@
 			data_index,
 			info,
 			prev_info,
-			scene;
+			scene,
+			counter;
 	// get reference
 	controller = new ScrollMagic.Controller();
 	photos  = document.querySelectorAll('[class^="photo-"]'); 
+	counter = document.querySelector('.statistics-photos-value');
+	counter.textContent = photos.length;
 
 	for ( var i=0; i<photos.length; i++ ) {
 		photo = photos[i];

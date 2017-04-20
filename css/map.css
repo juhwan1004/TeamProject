@@ -86,7 +86,6 @@ a {
 	min-width: 37.5rem;
 	height: 5rem;
 	background-image: url(../images/steps-day-bg.png);
-	background-size: 100% 80px;
 }
 /* //diary panel */
 /* scroll man */
@@ -103,10 +102,54 @@ a {
 	height: 50px;
 	background-image: url(../images/steps-sprite.png);
 	background-repeat: no-repeat;
-  animation-name: frame-animation; 
+  animation-name: scroll-man-animation; 
 }
-@keyframes frame-animation { 0% { background-position: 0px 0; } 100% { background-position: -350px 0; } }
+@keyframes scroll-man-animation { 0% { background-position: 0px 0; } 100% { background-position: -350px 0; } }
 /* //scroll man */
+/* parallax background */
+.parallax-day {
+	background-image: url(../images/parallax/steps-day-land.png), 
+										url(../images/parallax/steps-day-cloud.png),
+										url(../images/parallax/steps-day-front-mt.png),
+										url(../images/parallax/steps-day-back-mt.png),
+										url(../images/parallax/steps-day-sky.png);
+	background-position: 0px -9px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+	animation: parallax-day-bg 20s linear infinite;
+}
+.parallax-evening {
+	background-image: url(../images/parallax/steps-evening-land.png), 
+										url(../images/parallax/steps-evening-cloud.png),
+										url(../images/parallax/steps-evening-front-mt.png),
+										url(../images/parallax/steps-evening-back-mt.png),
+										url(../images/parallax/steps-evening-sky.png);
+	background-position: 0px -9px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+	animation: parallax-evening-bg 20s linear infinite;
+}
+.parallax-night {
+	background-image: url(../images/parallax/steps-night-land.png), 
+										url(../images/parallax/steps-night-front-mt.png),
+										url(../images/parallax/steps-night-back-mt.png),
+										url(../images/parallax/steps-night-sky.png);
+	background-position: 0px -9px, 0px 0px, 0px 0px, 0px 0px;
+	animation: parallax-night-bg 20s linear infinite;
+}
+
+/* day ani */
+@keyframes parallax-day-bg { 
+	0% { background-position: 200% -9px, 80% 0px, 100% 0px, 0px 0px, 0px 0px; }
+	100% { background-position: 0px -9px, 0px 0px, 80% 0px, 0px 0px, 0px 0px; }
+}
+/* evening ani */
+@keyframes parallax-evening-bg { 
+	0% { background-position: 200% -9px, 80% 0px, 100% 0px, 0px 0px, 0px 0px; }
+	100% { background-position: 0px -9px, 0px 0px, 80% 0px, 0px 0px, 0px 0px; }
+}
+/* night ani */
+@keyframes parallax-night-bg { 
+	0% { background-position: 200% -9px, 80% 0px, 0px 0px, 0px 0px; }
+	100% { background-position: 0px -9px, 0px 0px, 0px 0px, 0px 0px; }
+}
+/* //parallax background*/
 /* diary contents */
 .diary-contents {
 	width: 100%;

@@ -25,15 +25,21 @@
 		// progress 설정
 		progress.setAttribute('style', 'width:'+ scroll +'%;');
 		// 스크롤맨 배경 설정
-		if ( scroll > 0 && scroll < 33 ) {
-			diary_panel.setAttribute('style', 'background-image: url("../images/steps-day-bg.png"); background-size: 100% 80px; background-repeat: no-repeat;');
+		if ( scroll >= 0 && scroll < 33 ) {
+			diary_panel.classList.remove('parallax-evening');
+			diary_panel.classList.remove('parallax-night');
+			diary_panel.classList.add('parallax-day');
 		}	else if ( scroll >= 33 && scroll < 66 ) {
-			diary_panel.setAttribute('style', 'background-image: url("../images/steps-evening-bg.png"); background-size: 100% 80px; background-repeat: no-repeat;');
+			diary_panel.classList.remove('parallax-day');
+			diary_panel.classList.remove('parallax-night');
+			diary_panel.classList.add('parallax-evening');
 		} else if ( scroll >= 66 && scroll < 100 ) {
-			diary_panel.setAttribute('style', 'background-image: url("../images/steps-night-bg.png"); background-size: 100% 80px; background-repeat: no-repeat;');
+			diary_panel.classList.remove('parallax-day');
+			diary_panel.classList.remove('parallax-evening');
+			diary_panel.classList.add('parallax-night');
 		}
 		// steps images
-		frame.setAttribute('style', 'animation: frame-animation 0.5s steps(7) infinite');
+		frame.setAttribute('style', 'animation: scroll-man-animation 0.5s steps(7) infinite');
 	});	
 }(window, helper));
 
