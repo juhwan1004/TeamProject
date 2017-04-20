@@ -1,0 +1,50 @@
+
+/**
+ * Variable declarations
+ */
+/*$btn-color: #eceff1;
+$btn-size : 100px;
+$duration : 300ms;
+$easing   : cubic-bezier(0, 0, .2, 1);
+$half-size: ($btn-size / 2);*/
+
+
+/**
+ * The actual play button
+ */
+.play-btn {
+  /** Positioning */
+  position    : absolute;
+  left        : 50%;
+  top         : 50%;
+  margin-left : -50px;
+  margin-top  : -50px;
+  z-index: 999;
+
+  /** Sizing */
+  width       : 100px;
+  height      : 100px;
+
+  /** Border styling */
+  border-style: solid;
+  border-color: transparent #fff transparent #fff;
+  border-width: 50px 0 50px 100px;
+}
+
+.play-btn.play, .play-btn.stop {
+  margin: 0;
+  border-left: 0.5rem solid rgba(233,30,99,0.6);
+  border-top: 0 solid transparent;
+  border-bottom: 0 solid transparent;
+  height: 2.5rem;
+}
+
+/*.play-btn.play {
+  transform   : rotate(180deg);
+  border-width: 0px 100px 50px 0;
+}*/
+
+.play-btn.stop {
+    transform   : rotate(90deg);
+    border-width: 50px 0 50px 100px;
+}
