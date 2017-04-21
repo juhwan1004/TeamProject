@@ -173,37 +173,3 @@ $('.video-main').on('click', function() {
 $('.video-main').on('click', function() {
   $('.play-btn').toggleClass('stop paly');
 });
-
-
-// info 캐러셀
-// 버튼클릭 = 사진이동 = 캐러셀아이콘 색 변경(순반향, 역방향)
-
-	// var info_item = $('.info', 'background-image');
-	// console.log(info_item);
-	// for (var i = 0; i < info_item.length; i++) {
-	// 	console.log(info_item);
-  //  }
-
-// $(function(){
-// 	$('.icon-btn-left').on('click', function() {
-// 		$('.info').css("background-image","url(../images/info-img-02.png)");
-// 	});
-// })
-
-
-// var info_item = document.querySelector('.info-item');
-// console.log(info_item);
-
-
-// $(document).ready(function() {
-// 	var info_item = $('.info-item');
-// 	for (var i = 0; i < info_item.length; i++) {
-// 		$('.icon-btn-left').on('click', function() {
-//   	info_item.css("display", "black");
-// 		});
-//    }
-// });
-
-// $('.info').on('click', function() {
-//   $('.info', "background-image").toggleClass('');
-// });

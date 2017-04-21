@@ -1,0 +1,273 @@
+@charset "UTF-8";
+@import url(fonts.css);
+/* ---------------- Reset Style ---------------- */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+html {
+	font-size: 16px;
+	height: 100%;
+}
+body, h1, h2, h3, figure {
+	margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+body { 
+	height: 100%;
+	overflow-y: hidden; 
+	overflow-x: hidden; 
+}
+a {
+	text-decoration: none;
+}
+/* Hidden */
+.readable-hidden {
+	position: absolute;
+	left: -9999em;
+	overflow: hidden;
+}
+/* ---------------- //Reset Style ---------------- */
+/* ---------------- Header ---------------- */
+.header {
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+	position: relative;
+	background: #1a2430;
+}
+.header-logo {
+  margin: 5px 10px 5px 20px;
+  z-index: 10;
+}
+.header-logo img {
+  width: 135px;
+}
+.header-display-id {
+	font-size: 0.75rem;
+	color: #fff;
+	margin: auto 5px;
+	z-index: 10;
+}
+/* header scroll coloring */
+.progress {
+	position: absolute;
+	width: 0%;
+	height: 5px;
+	top: 45px;
+	background: #2196f3;
+}
+/* header scroll coloring */
+/* ---------------- //Header ---------------- */
+/* ---------------- Wrapper ---------------- */
+.wrapper {
+	min-width: 1200px;
+	height: 100%;
+}
+/* ---------------- //Wrapper ---------------- */
+/* ---------------- Diary ---------------- */
+.diary {
+	float: left;
+	width: 50%;
+	min-width: 37.5rem;
+	height: 0;
+	padding-bottom: 100%;
+}	
+/* diary panel */
+.diary-panel {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	position: fixed;
+	width: 50%;
+	min-width: 37.5rem;
+	height: 5rem;
+	background-image: url(../images/steps-day-bg.png);
+}
+/* //diary panel */
+/* scroll man */
+.scroll-man {
+	position: absolute;
+	left: 0%;
+	width: 50px;
+	height: 45px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+#frame {
+	width: 350px;
+	height: 50px;
+	background-image: url(../images/steps-sprite.png);
+	background-repeat: no-repeat;
+  animation-name: scroll-man-animation; 
+}
+@keyframes scroll-man-animation { 0% { background-position: 0px 0; } 100% { background-position: -350px 0; } }
+/* //scroll man */
+/* parallax background */
+.parallax-day {
+	background-image: url(../images/parallax/steps-day-land.png), 
+										url(../images/parallax/steps-day-cloud.png),
+										url(../images/parallax/steps-day-front-mt.png),
+										url(../images/parallax/steps-day-back-mt.png),
+										url(../images/parallax/steps-day-sky.png);
+	background-position: 0px -9px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+	animation: parallax-day-bg 20s linear infinite;
+}
+.parallax-evening {
+	background-image: url(../images/parallax/steps-evening-land.png), 
+										url(../images/parallax/steps-evening-cloud.png),
+										url(../images/parallax/steps-evening-front-mt.png),
+										url(../images/parallax/steps-evening-back-mt.png),
+										url(../images/parallax/steps-evening-sky.png);
+	background-position: 0px -9px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+	animation: parallax-evening-bg 20s linear infinite;
+}
+.parallax-night {
+	background-image: url(../images/parallax/steps-night-land.png), 
+										url(../images/parallax/steps-night-front-mt.png),
+										url(../images/parallax/steps-night-back-mt.png),
+										url(../images/parallax/steps-night-sky.png);
+	background-position: 0px -9px, 0px 0px, 0px 0px, 0px 0px;
+	animation: parallax-night-bg 20s linear infinite;
+}
+
+/* day ani */
+@keyframes parallax-day-bg { 
+	0% { background-position: 200% -9px, 80% 0px, 100% 0px, 0px 0px, 0px 0px; }
+	100% { background-position: 0px -9px, 0px 0px, 80% 0px, 0px 0px, 0px 0px; }
+}
+/* evening ani */
+@keyframes parallax-evening-bg { 
+	0% { background-position: 200% -9px, 80% 0px, 100% 0px, 0px 0px, 0px 0px; }
+	100% { background-position: 0px -9px, 0px 0px, 80% 0px, 0px 0px, 0px 0px; }
+}
+/* night ani */
+@keyframes parallax-night-bg { 
+	0% { background-position: 200% -9px, 80% 0px, 0px 0px, 0px 0px; }
+	100% { background-position: 0px -9px, 0px 0px, 0px 0px, 0px 0px; }
+}
+/* //parallax background*/
+/* diary contents */
+.diary-contents {
+	width: 100%;
+	margin-top: 5rem;
+	overflow-y: auto;
+	background: #e7eaec;
+	text-align: center;
+	z-index: -20;
+}
+.diary-contents-header {
+	text-align: center;
+	background-image: url(../images/info-img-03.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.diary-contents-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 16.25rem;
+}
+/* diary user */
+.diary-user-nick {
+	margin: 0.63rem 0;
+	color: #fff;
+}
+.diary-user-img {
+	width: 9.38rem;
+	height: 9.38rem;
+}
+/* //diary user */
+.diary-contents-statistics-wrap {
+	display: flex;
+	width: 100%;
+	height: 6.25rem;
+	background-color: rgba(00,00,00,0.6);
+}
+/* //diary contents */
+
+/* album statistics */
+.statistics {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 20%;
+	height: 100px;
+	color: #fff;
+	font-weight: normal;
+}
+.statistics-text {
+	margin: 0;
+}
+[class$="-value"] {
+	font-size: 0.88rem;
+}
+.statistics::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-right: 1px solid rgba(255,255,255,0.3);
+}
+.statistics:last-child::after {
+	display: none;
+}
+.statistics-kilo-value::before,
+.statistics-likes-value::before,
+.statistics-views-value::before,
+.statistics-day-value::before,
+.statistics-photos-value::before {
+	display: block;
+	font-family: 'statistics';
+	font-size: 1.56rem;		
+	margin-bottom: 0.5rem;
+}
+.statistics-kilo-value::before   { content: '\e801'; } 
+.statistics-likes-value::before  { content: '\e800'; } 
+.statistics-views-value::before  { content: '\e802'; }
+.statistics-day-value::before    { content: '\e803'; }
+.statistics-photos-value::before { content: '\e804'; }
+
+/* //album statistics */
+/* ---------------- //Diary ---------------- */
+
+/* ---------------- Photo ---------------- */ 
+[class^="photo-"] {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	height: 300px;
+	margin: 20px auto;
+	padding: 15px;
+	background: #fff;
+	box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+	transition: all 0.5s ease-in-out;
+}
+[class^="photo-"]:hover {
+	box-shadow: 3px 3px 3px 0px rgba(46,61,73,0.15); 
+	cursor: pointer;
+}
+.card {
+	width: 100%;
+	height: 400px;
+	padding: 0;
+	font-size: 5rem;
+	background: transparent;
+}
+/* ---------------- //Photo ---------------- */
+
+/* ---------------- Map ---------------- */
+#map {
+	width: 50%;
+	min-width: 37.5rem;
+	height: inherit;
+}
+/* ---------------- //Map ---------------- */
