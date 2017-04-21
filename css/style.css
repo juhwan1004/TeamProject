@@ -209,26 +209,6 @@ fieldset {
 }
 
 
-/*.header-app-store img, .header-google-play img {
-  height: 30px;
-  margin: 0 5px 0 5px;
-	vertical-align: top;
-}
-
-.header-app-store strong {
-	position: absolute;
-	top: 23px;
-	left: 50px;
-	font-size: 0.88rem;
-}
-
-.header-google-play strong {
-	position: absolute;
-	top: 23px;
-	left: 53px;
-	font-size: 0.88rem;
-}*/
-
 /* ---------------- //Video ---------------- */
 
 /* ---------------- Intro ---------------- */
@@ -401,12 +381,16 @@ fieldset {
 .info {
 	position: relative;
 	padding-top: 6.25rem;
-	background-image: url(../images/info-img.png);
 	background-size: cover;
 	text-align: center;
 	color: #fff;
 	/* 사진 삽입 전 임시 높이 */
 	height: 20rem;
+	overflow: hidden;
+}
+
+.info-item {
+	margin-top: -200px;
 }
 
 .info-bg-color {
@@ -444,26 +428,6 @@ fieldset {
   cursor: pointer;
   margin: 0 10px 0px 10px;
 }
-
-/*.info-app-store img, .info-google-play img {
-  height: 30px;
-  margin: 0 5px 0 5px;
-	vertical-align: top;
-}
-
-.info-app-store strong {
-	position: absolute;
-	top: 23px;
-	left: 50px;
-	font-size: 0.88rem;
-}
-
-.info-google-play strong {
-	position: absolute;
-	top: 23px;
-	left: 53px;
-	font-size: 0.88rem;
-}*/
 
 /* ---------------- //Info ---------------- */
 
@@ -509,5 +473,6 @@ fieldset {
 	position: relative;
 	left: 30px;
 	padding-bottom: 10px;
+	opacity: 0.2;
 }
 /* ---------------- //Footer ---------------- */

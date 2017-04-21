@@ -1,36 +1,3 @@
-
-
-
-/*
-
-
-.video, .intro, #albums, .info, .footer
-
- */
-
-
-/*.header {
-  opacity: 1;
-	transition: all 0.5s ease;
-}
-
-.header.trans {
-  opacity: 0.5;
-	transition: all 0.5s ease;
-}*/
-
-/*.video {
-	opacity: 0;
-	transition: all 1s ease;
-	transform: translateY(50px);
-}
-
-.video.fade-in {
-	opacity: 1;
-	transform: translateY(0);
-}*/
-
-
 .intro {
 	opacity: 0;
 	transition: all 0.5s ease;

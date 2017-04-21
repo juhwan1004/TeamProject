@@ -27,10 +27,12 @@
   content: "";
   height: 3rem;
 }
+
+/* pause */
 .control.pause .left,
 .control.pause .right {
   margin: 0;
-  border-left: 0.5rem solid rgba(255,255,255,0.5);
+  border-left: 0.5rem solid rgba(255,255,255,0.9);
   border-top: 0 solid transparent;
   border-bottom: 0 solid transparent;
   height: 2.5rem;
@@ -44,7 +46,7 @@
 .control.play .left {
   margin-left: 0.3rem;
   left: 5em;
-  border-left: 1rem solid rgba(255,255,255,0.5);
+  border-left: 1rem solid rgba(255,255,255,0.9);
   border-top: 0.5rem solid transparent;
   border-bottom: 0.5rem solid transparent;
   border-right: 0px solid transparent;
@@ -52,17 +54,8 @@
 }
 .control.play .right {
   margin: 0;
-  border-left: 2rem solid rgba(255,255,255,0.5);
+  border-left: 2rem solid rgba(255,255,255,0.9);
   border-top: 1rem solid transparent;
   border-bottom: 1rem solid transparent;
   height: 0rem;
 }
-/*.control:hover {
-  border-color: #fff;
-}
-.control:hover .left,
-.control:hover .right {
-  border-left-color: #fff;
-}*/
-
-/* #E91E63 */

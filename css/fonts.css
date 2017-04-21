@@ -13,6 +13,7 @@
 .icon-heart:before { content: '\e800'; } /* '' */
 
 @font-face {
+<<<<<<< HEAD
   font-family: 'statistics';
   src: url('../icon-font/map-stat-icon/fontello.eot?78436978');
   src: url('../icon-font/map-stat-icon/fontello.eot?78436978#iefix') format('embedded-opentype'),
@@ -29,3 +30,17 @@
 .icon-eye:before { content: '\e802'; } /* '' */
 .icon-calendar:before { content: '\e803'; } /* '' */
 .icon-camera:before { content: '\e804'; } /* '' */
+=======
+  font-family: 'fontello-btn';
+  src: url('../icon-font/fontello-btn/font/fontello.eot?82771518');
+  src: url('../icon-font/fontello-btn/font/fontello.eot?82771518#iefix') format('embedded-opentype'),
+       url('../icon-font/fontello-btn/font/fontello.woff?82771518') format('woff'),
+       url('../icon-font/fontello-btn/font/fontello.ttf?82771518') format('truetype'),
+       url('../icon-font/fontello-btn/font/fontello.svg?82771518#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-btn-left:before { content: '\f104'; }  /* '' */
+.icon-btn-right:before { content: '\f105'; }  /* '' */
+>>>>>>> 67d12eaec49f884e9208567df12ec3c0b7ab7ee4
