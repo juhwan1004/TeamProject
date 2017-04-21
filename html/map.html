@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Map Page</title>
+	<link href="../css/map.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<!-- HEADER -->
+	<header class="header">
+		<!-- Logo -->
+		<div class="progress"></div>
+		<h1 class="header-logo">
+			<a href="#"><img src="../images/logo-white.svg" alt="Record"></a>
+		</h1>
+		<p class="header-display-id">사진과 위치를 함께 기록하는 여행다이어리</p>
+	</header>
+	<div class="wrapper">
+		<!-- DIARY -->
+		<section class="diary">
+			<h2 class="diary-heading readable-hidden">Diary Heading</h2>
+			<!-- Diary Panel -->
+			<section class="diary-panel parallax-day">
+				<h3 class="diary-panel-heading readable-hidden">diary Panel</h3>
+				<!-- Scroll Man -->
+				<div class="scroll-man">
+					<div id="frame"></div>
+				</div>
+			</section>
+			<!-- Diary Contents -->
+			<section class="diary-contents">
+				<h3 class="diary-contents-heading readable-hidden">Trip Contents</h3>
+				<!-- Diary Contents Header -->
+				<div class="diary-contents-header">
+					<!-- Diary Contents Cover -->
+					<div class="diary-contents-wrap">
+						<figure class="diary-user-info">
+							<figcaption class="diary-user-nick">JuHwan Shin</figcaption>
+							<img class="diary-user-img" src="../images/my-marker-icon.png">
+						</figure>
+					</div>
+					<!-- Album Statistics -->
+					<div class="diary-contents-statistics-wrap">
+						<div class="statistics">
+							<div class="statistics-kilo-value">0</div>
+							<p class="statistics-text">kilometers</p>
+						</div>
+						<div class="statistics">
+							<div class="statistics-likes-value">0</div>
+							<p class="statistics-text">likes</p>
+						</div>
+						<div class="statistics">
+							<div class="statistics-views-value">0</div>
+							<p class="statistics-text">views</p>
+						</div>
+						<div class="statistics">
+							<div class="statistics-day-value">0</div>
+							<p class="statistics-text">day</p>
+						</div>
+						<div class="statistics">
+							<div class="statistics-photos-value">0</div>
+							<p class="statistics-text">photos</p>
+						</div>
+					</div>
+				</div>
+			<!-- In Diary -->
+				<div class="in-diary-wrapper">
+				</div>
+			</section>
+		</section>
+		<!-- Google Map -->
+		<section id="map"></section>
+	</div>
+
+	<!-- Scripts -->
+	<script src="../js/map-js/helper.js"></script>
+	<script src="../js/map-js/app.js"></script>
+	<script src="../js/map-js/computed_height.js"></script>
+	<script src="../js/map-js/scroll_man.js"></script>
+	<script src="../js/map-js/google_map.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGvF2V1dSu1q0dbYnld1DrYSFLzIt8s_4&callback=initMap"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+	<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> -->
+	<script src="../js/map-js/scroll_magic.js"></script>
+</body>
+</html>
