@@ -10,9 +10,11 @@
 	<link rel="stylesheet" href="../css/sign_up.css">
 	<link rel="stylesheet" href="../css/parallax.css">
 	<link rel="stylesheet" href="../css/icon.css">
+	<link rel="stylesheet" href="../css/carousel.css">
 	<!-- <link rel="stylesheet" href="../css/icon_2.css"> -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js">
 	</script>
+
 </head>
 
 <body>
@@ -351,17 +353,46 @@
 <section class="info">
 	<h2 class="info-heading readable-hidden">Info Heading</h2>
 
-	<!-- <div class="info-item">
-		<div class="info-item-01">
-			<img src="../images/info-img.png" alt="">
-		</div>
-		<div class="info-item-02">
-			<img src="../images/info-img-02.png" alt="">
-		</div>
-		<div class="info-item-03">
-			<img src="../images/info-img-03.png" alt="">
-		</div>
-	</div> -->
+<!-- carousel -->
+	<div class="carousel">
+    <div class="carousel-inner">
+
+        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        <div class="carousel-item">
+            <img src="../images/info-img-01.png">
+        </div>
+
+        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item">
+            <img src="../images/info-img-02.png">
+        </div>
+
+        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item">
+            <img src="../images/info-img-03.png">
+        </div>
+
+        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+        <label for="carousel-2" class="carousel-control next control-1">›</label>
+        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+        <label for="carousel-3" class="carousel-control next control-2">›</label>
+        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+        <label for="carousel-1" class="carousel-control next control-3">›</label>
+
+        <ol class="carousel-indicators">
+            <li>
+                <label for="carousel-1" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-2" class="carousel-bullet">•</label>
+            </li>
+            <li>
+                <label for="carousel-3" class="carousel-bullet">•</label>
+            </li>
+        </ol>
+    </div>
+	</div>
+
 
 	<div class="info-bg-color">
 		<!-- Background Image -->
@@ -391,18 +422,6 @@
 				<img src="../images/google-play.svg" alt="logo-googlePlay">
 			</button>
 		</article>
-		<ui class="carousel">
-			<li class="carousel-1"></li>
-			<li class="carousel-2"></li>
-			<li class="carousel-3"></li>
-		</ui>
-		<div class="icon-btn">
-			<button class="icon-btn-left"></button>
-			<button class="icon-btn-right"></button>
-		</div>
-
-
-
   </div>
 </section>
 
@@ -442,6 +461,7 @@
 	<script src="../js/main-animation.js"></script>
 	<script src="../js/main-page.js"></script>
 	<script src="../js/sign.js"></script>
+	<script src="../js/carousel.js"></script>
 
 </body>
 </html>
