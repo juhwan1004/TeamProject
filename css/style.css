@@ -205,7 +205,7 @@ fieldset {
 
 .header-app-store:hover, .header-google-play:hover,
 .info-app-store:hover, .info-google-play:hover {
-	opacity: 0.6;
+	/*opacity: 0.8;*/
 }
 
 
@@ -398,15 +398,24 @@ fieldset {
 /* ---------------- //Albums ---------------- */
 
 /* ---------------- Info ---------------- */
+/*.info-item {
+	display: flex;
+	margin-top: -115px;
+}*/
+
 .info {
 	position: relative;
 	padding-top: 6.25rem;
-	background-image: url(../images/info-img.png);
 	background-size: cover;
 	text-align: center;
 	color: #fff;
 	/* 사진 삽입 전 임시 높이 */
 	height: 20rem;
+	overflow: hidden;
+}
+
+.info-item {
+	margin-top: -200px;
 }
 
 .info-bg-color {
@@ -509,5 +518,6 @@ fieldset {
 	position: relative;
 	left: 30px;
 	padding-bottom: 10px;
+	opacity: 0.2;
 }
 /* ---------------- //Footer ---------------- */

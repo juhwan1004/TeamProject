@@ -1,0 +1,127 @@
+
+.carousel {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: -100px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: relative;
+    opacity: 1;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 50px;
+    height: 40px;
+    line-height: 27px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 1;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 280px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: rgba(81, 177, 254, 1);
+}
+
+
+/*
+.icon-btn-left, .icon-btn-right{
+	background: none;
+	border: none;
+	position: absolute;
+	top: 9rem;
+	color: rgba(81, 177, 254, 0.8);
+	font-size: 3rem;
+}
+
+.icon-btn-left {
+	left: 1rem;
+}
+
+.icon-btn-right {
+	right: 1rem;
+}
+
+.icon-btn-left:before, .icon-btn-right:before {
+	content: '\f104';
+	font-family: 'fontello-btn';
+}
+
+.icon-btn-right:before {
+	content: '\f105';
+	font-family: 'fontello-btn';
+}*/
